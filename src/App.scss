@@ -1,0 +1,22 @@
+:root {
+	// color
+	--black-color: #272d35;
+	--green-color: #5d8e5f;
+	--back-color: #f8f5f2;
+	--gray-color: #c2c2c2;
+	--hover-color: #dbd3ca;
+
+	// font-weight
+	--regular-font: 400;
+	--semibold-font: 600;
+	--bold-font: 700;
+}
+
+body {
+	background-color: var(--back-color);
+}
+
+.App {
+	font-family: 'Pretendard';
+	margin: 0 400px;
+}
