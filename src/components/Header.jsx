@@ -1,4 +1,4 @@
-import '../componets/Header.scss'
+import '../components/Header.scss'
 import logo_small from '../assets/images/logo_small.png';
 import bikeIcon from '../assets/images/bike.png';
 import alarmIcon from '../assets/images/alram.png';
