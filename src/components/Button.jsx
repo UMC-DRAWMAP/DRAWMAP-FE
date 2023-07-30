@@ -1,9 +1,11 @@
+import './Button.scss';
+
 export default function Button({ img, type, content }) {
 	return (
-		<div>
-			<button className={type}>
+		<div className="btn-body">
+			<button className={`btn ${type}`}>
 				<img src={img} alt="button img" style={{ display: img ? 'block' : 'none' }} />
-				{content}
+				<span style={{ display: img ? 'none' : 'block' }}>{content}</span>
 			</button>
 			{/* 색상만 변경 */}
 			{/* acting 시 글자로 변경 */}
