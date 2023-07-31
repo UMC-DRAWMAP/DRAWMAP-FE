@@ -1,62 +1,59 @@
 .btn-body {
 	.btn {
 		background-color: var(--back-color);
-		border-radius: 32px;
 		border: 1.5px solid var(--black-color);
+		border-radius: 32px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: var(--black, #272d35);
+		padding: 5px;
+		font-weight: var(--bold-font);
 		&.default {
-			width: 37px;
-			height: 37px;
+			width: 32.205px;
+			height: 31.831px;
 			img {
 				width: 100%;
-				height: 100%;
-				margin: 20px;
-				object-fit: cover;
+				height: auto;
 			}
 		}
 		&.more {
 			width: 26.462px;
 			height: 26.975px;
 			img {
-				width: 8.01px;
-				height: 100%;
-				object-fit: cover;
-				margin: 10px;
+				width: auto;
+				height: 85%;
 			}
 		}
-		&.level {
+		&.text-btn {
 			display: inline-flex;
-			padding: 10px 29px;
 			border-radius: 100px;
 			border: 2px solid var(--black-color);
 			font-size: 16px;
-			font-weight: 700;
+			padding: 10px 29px;
+			width: max-content;
 		}
 		&.arrow {
 			width: 26.462px;
 			height: 26.975px;
 			img {
-				width: 16.45px;
-				height: 16.769px;
+				width: 120%;
+				height: auto;
 			}
 		}
 		&.text-more {
-			width: 48px;
-			height: 24px;
-			// border-radius: 100px;
+			width: max-content;
+			padding: 5px 10px;
+			// height: 24px;
 			border: 2px solid var(--black-color);
 			font-size: 10px;
-			font-weight: 700;
 		}
 		&.acting {
 			width: 37px;
 			height: 37px;
 			img {
-				width: 24px;
-				height: 24px;
+				width: 70%;
+				height: auto;
 			}
 			&:hover,
 			&:active {
@@ -64,7 +61,6 @@
 				height: auto;
 				display: inline-flex;
 				border-radius: 20px;
-				border: 1.5px solid var(--black-color);
 				padding: 9px 20px;
 				img {
 					display: none !important;
@@ -72,7 +68,7 @@
 				span {
 					display: block !important;
 					font-size: 11px;
-					font-weight: 600;
+					font-weight: var(--semibold-font);
 					width: 29px;
 				}
 			}
