@@ -1,0 +1,83 @@
+.btn-body {
+	.btn {
+		background-color: var(--back-color);
+		border: 1.5px solid var(--black-color);
+		border-radius: 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--black, #272d35);
+		padding: 5px;
+		font-weight: var(--bold-font);
+		&.default {
+			width: 32.205px;
+			height: 31.831px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&.more {
+			width: 26.462px;
+			height: 26.975px;
+			img {
+				width: auto;
+				height: 85%;
+			}
+		}
+		&.text-btn {
+			display: inline-flex;
+			border-radius: 100px;
+			border: 2px solid var(--black-color);
+			font-size: 16px;
+			padding: 10px 29px;
+			width: max-content;
+		}
+		&.arrow {
+			width: 26.462px;
+			height: 26.975px;
+			img {
+				width: 120%;
+				height: auto;
+			}
+		}
+		&.text-more {
+			width: max-content;
+			padding: 5px 10px;
+			// height: 24px;
+			border: 2px solid var(--black-color);
+			font-size: 10px;
+		}
+		&.acting {
+			width: 37px;
+			height: 37px;
+			img {
+				width: 70%;
+				height: auto;
+			}
+			&:hover,
+			&:active {
+				width: auto;
+				height: auto;
+				display: inline-flex;
+				border-radius: 20px;
+				padding: 9px 20px;
+				img {
+					display: none !important;
+				}
+				span {
+					display: block !important;
+					font-size: 11px;
+					font-weight: var(--semibold-font);
+					width: 29px;
+				}
+			}
+		}
+		&:hover {
+			background-color: var(--hover-color);
+		}
+		&:active {
+			background-color: var(--green-color);
+		}
+	}
+}
