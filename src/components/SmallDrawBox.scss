@@ -1,0 +1,42 @@
+.sdb-body {
+	width: 243.44px;
+	height: 243.43px;
+	border-radius: 20px;
+	border: 1.721px solid var(--black-color);
+	position: relative;
+	.sdb-map-img {
+		width: 243.44px;
+		height: 243.43px;
+		border-radius: 20px;
+		background: lightgray 50%;
+	}
+	.sdb-user-info {
+		position: absolute;
+		bottom: 0;
+		right: 0.1px;
+		width: 243px;
+		height: 60px;
+		border-radius:20px;
+		background: linear-gradient(0, #868686 6%, rgba(217, 217, 217, 0) 65%);
+		.sdb-user-name {
+			position: absolute;
+			width: 65.85px;
+			height: 15.393px;
+			right: 48.08px;
+			bottom: 12.16px;
+			text-align: right;
+			font-size: 11px;
+			font-weight: var(--bold-font);
+		}
+		.sdb-user-profile-img {
+			position: absolute;
+			right: 11.2px;
+			bottom: 8.2px;
+			width: 28.784px;
+			height: 28.784px;
+			// border-radius: 26.975px;
+			// border: 2px solid var(--black-color);
+			// background: var(--back-color);
+		}
+	}
+}
