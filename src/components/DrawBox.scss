@@ -1,0 +1,72 @@
+.draw-box {
+    width: 297px;
+    height: 512px;
+    border-radius: 20px;
+    border: 1.721px solid var(--black-color);
+    position: relative;
+  
+    .sdb-body {
+      width: 297px;
+      height: 296.23px;
+      border-radius: 20px 20px 0 0; /* Removed bottom-left and bottom-right border-radius */
+      border: 1.721px solid var(--black-color);
+      position: relative;
+  
+      .sdb-map-img {
+        width: 296.694px;
+        height: 296.694px;
+        border-radius: 20px 20px 0 0; /* Removed bottom-left and bottom-right border-radius */
+        background: lightgray 50%;
+      }
+  
+      .sdb-user-info {
+        position: absolute;
+        bottom: 0;
+        right: 0.1px;
+        width: 297px;
+        height: 60px;
+        border-radius : 0;
+        background: linear-gradient(0, #868686 6%, rgba(217, 217, 217, 0) 65%);
+  
+        .sdb-user-name {
+          position: absolute;
+          width: 65.85px;
+          height: 15.393px;
+          right: 48.08px;
+          bottom: 12.16px;
+          text-align: right;
+          font-size: 11px;
+          font-weight: var(--bold-font);
+        }
+  
+        .sdb-user-profile-img {
+          position: absolute;
+          right: 11.2px;
+          bottom: 8.2px;
+          width: 28.784px;
+          height: 28.784px;
+        }
+      }
+    }
+    .draw-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    
+        .draw-text
+        {
+            position: absolute;
+            font-size: 13px;
+        }
+        .draw-rating
+        {
+            position: absolute;
+            font-size: 13px;
+        }
+        .draw-review {
+          position: absolute;
+          font-size: 18px;
+        }
+      }
+  }
+  

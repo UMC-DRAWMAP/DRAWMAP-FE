@@ -1,12 +1,12 @@
 import { Reset } from 'styled-reset';
 import './App.scss';
-import SmallDrawBox from './components/SmallDrawBox';
+import DrawBox from './components/DrawBox';
 
 function App() {
 	return (
 		<div className="App">
 			<Reset />
-			<SmallDrawBox />
+			<DrawBox />
 		</div>
 	);
 }
