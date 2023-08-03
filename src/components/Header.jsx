@@ -1,6 +1,6 @@
 import '../components/Header.scss'
 import logo_small from '../assets/images/logo-drawmap.svg';
-import bikeIcon from '../assets/images/bike.svg';
+import ProfileIcon from '../assets/images/profile-mini.svg';
 import alarmIcon from '../assets/images/alram.svg';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         </div>
         <div className="header__right">
           <img src={alarmIcon} alt="Alarm" className="header__alarm-icon" />
-          <img src={bikeIcon} alt="Bike" className="header__bike-icon" />
+          <img src={ProfileIcon} alt="Bike" className="header__Profile-icon" />
           <span className="header__nav-item">로그아웃</span>
         </div>
       </header>
