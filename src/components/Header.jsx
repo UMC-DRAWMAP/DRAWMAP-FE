@@ -17,7 +17,7 @@ function App() {
         </div>
         <div className="header__right">
           <img src={alarmIcon} alt="Alarm" className="header__alarm-icon" />
-          <img src={ProfileIcon} alt="Bike" className="header__Profile-icon" />
+          <img src={ProfileIcon} alt="Bike" className="header__profile-icon" />
           <span className="header__nav-item">로그아웃</span>
         </div>
       </header>
