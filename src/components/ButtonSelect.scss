@@ -1,0 +1,18 @@
+select {
+	display: inline-flex;
+	padding: 10px 22px 10px 29px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 100px;
+	border: 2px solid var(--black-color);
+	background: var(--back-color);
+	option {
+		color: red;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	&:hover {
+		background-color: var(--hover-color);
+	}
+}
