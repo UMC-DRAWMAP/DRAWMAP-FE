@@ -129,4 +129,4 @@ export const CheckPoint = ({ imgsrc, checkpointname, checkpointplace }) => {
             <p className='checkpointplace'>{checkpointplace}</p>
         </div>
     )
-}
+};
