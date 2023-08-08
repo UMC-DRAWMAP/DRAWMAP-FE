@@ -3,9 +3,9 @@ import logo_small from '../assets/images/logo-drawmap.svg';
 import ProfileIcon from '../assets/images/profile-mini.svg';
 import alarmIcon from '../assets/images/alram.svg';
 
-function App() {
+function Header() {
   return (
-    <div className="App">
+    <div className="head">
       <header className="header">
         <div className="header__left">
           <img src={logo_small} alt="Logo" className="header__logo" />
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;
