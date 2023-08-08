@@ -1,0 +1,12 @@
+.lv-body {
+	width: 1244px;
+	.lv-box-group {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		.crb-body {
+			margin-right: 20px;
+		}
+	}
+}

@@ -4,7 +4,7 @@ export default function Paging({ page, count, setPage }) {
 	return (
 		<Pagination
 			activePage={page}
-			itemsCountPerPage={7}
+			itemsCountPerPage={10}
 			totalItemsCount={count}
 			pageRangeDisplayed={5}
 			prevPageText={'‹'}
