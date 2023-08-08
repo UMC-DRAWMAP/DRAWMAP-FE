@@ -3,7 +3,7 @@ import './App.scss';
 import Button from './components/Button';
 import ButtonSelect from './components/ButtonSelect';
 import Img from './assets/images/arrow-right.svg';
-import Paging from './components/Paging';
+import ListView from './components/ListView';
 
 function App() {
 	return (
@@ -15,7 +15,7 @@ function App() {
 				<option value="hi">jo</option>
 				<option value="hi">jo</option>
 			</ButtonSelect> */}
-			<Paging />
+			<ListView />
 		</div>
 	);
 }
