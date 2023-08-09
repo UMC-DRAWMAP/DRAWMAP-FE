@@ -1,0 +1,155 @@
+.CourseInput {
+    width: 1246px;
+    .pagetitle {
+        font-size: 17px;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 72.35px;
+    }
+    .inputcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .inputitem {
+            font-size: 17px;
+            font-weight: bold;
+            padding-left: 5px;
+            margin: 0;
+            margin-bottom: 9px;
+
+        }
+        .titleinputcontainer {
+            .titleinput {
+                width: 840px;
+                height: 45px;
+                border-radius: 20px;
+                border: 2px solid black;
+                background-color: var(--back-color);
+                padding-left: 24px;
+                font-size: 15px;
+            }
+        }
+        .placeinputcontainer {
+            width: 258px;
+            border: 1px solid blue;
+        }
+        .levelinputcontainer {
+            margin-left: 187.63px;
+            .levelbutton {
+                width: 64px;
+                height: 39px;
+                border: 2px solid black;
+                border-radius: 100px;
+                background-color: var(--back-color);
+                font-size: 16px;
+                font-weight: bold;
+                margin-right: 12px;
+                &:hover {
+                    background-color: var(--hover-color);
+                }
+                &:active {
+                    background-color: var(--green-color);
+                }
+            }
+        }
+        .detailinputcontainer {
+            margin-top: 31px;
+            .detailinput {
+                width: 804px;
+                height: 82px;
+                border: 2px solid black;
+                border-radius: 20px;
+                background-color: var(--back-color);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-family: 'Pretendard';
+                font-size: 15px;
+                resize: none;
+            }
+        }
+        .courseinputcontainer {
+            width: 864px;
+            display: flex;
+            flex-direction: row;
+            .courseimagebox {
+                width: 328.61px;
+                height: 328.61px;
+                border: 2px solid black;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .courseroutecontainer {
+                margin-left: 17.39px;
+                .courseroute {
+                    width: 470px;
+                    height: 136px;
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    background-color: var(--back-color);
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    font-family: 'Pretendard';
+                    font-size: 15px;
+                    resize: none;
+                }
+                .filecontainer {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 14px;
+                    //height: 135px;
+                    .uploadedfilecontainer {
+                        width: 478px;
+                        margin-right: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        column-gap: 12px;
+                        flex-wrap: wrap;
+                        row-gap: 7px;
+                        .uploadedfile {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            padding-top: 9px;
+                            padding-bottom: 9px;
+                            border: 1.5px solid black;
+                            font-size: 11px;
+                            font-weight: 600;
+                            border-radius: 20px;
+                            text-align: center;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .buttoncontainer {
+            width: 867px;
+            display: flex;
+            justify-content: flex-end;
+            .registerbutton {
+                background-color: var(--back-color);
+                padding-left: 50.5px;
+                padding-right: 50.5px;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                border: 2px solid black;
+                border-radius: 26.4px;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 60px;
+                &:hover {
+                    background-color: var(--hover-color);
+                }
+                &:active {
+                    background-color: var(--green-color);
+                }
+            }
+        }
+    }
+}
