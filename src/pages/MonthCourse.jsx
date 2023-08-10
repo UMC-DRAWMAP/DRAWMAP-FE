@@ -1,7 +1,7 @@
 import ChallengeColumnBox from "../components/ChallengeColumnBox";
 import Header from "../components/Header";
 
-import '../pages/MonthCourse.scss'
+import '../pages/MonthCourse.scss';
 
 const dummyChallengeCourse = [
     {
@@ -25,7 +25,7 @@ const dummyChallengeCourse = [
         level: 3,
         info: "이 코스는 어디 어디 어디를 경유하여 어디로 향하는 코스입니다. 완성시 개구리가 나타납니다."
     },
-]
+];
 
 
 const MonthCourse = () => {
