@@ -17,6 +17,9 @@ const CourseInput = () => {
     const selectFile = useRef("");
     const [selectedFiles, setSelectedFiles] = useState([]);
 
+    const imgRef = useRef();
+    const [imgFile, setImgFile] = useState("");
+
     const handleFileSelect = (e) => {
         const file = e.target.files;
         setSelectedFiles([...selectedFiles, ...file]);
@@ -24,6 +27,15 @@ const CourseInput = () => {
 
     const handleFileRemove = () => {
         
+    };
+
+    const handleImageUpload = () => {
+        const file = imgRef.current.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend = () => {
+            setImgFile(reader.result);
+   	    };
     };
 
     const handleClick1 = () => {
@@ -87,7 +99,10 @@ const CourseInput = () => {
                     <p className='inputitem'>코스 경로</p>
                     <div className='courseinputcontainer'>
                         <div className='courseimagebox'>
-                            <img src={cameraicon} alt="" className='courseimage'/>
+                            <label htmlFor="previewImg">
+                                <img src={imgFile ? imgFile : cameraicon} alt="" className='courseimage'/>
+                            </label>
+                            <input type="file" accept="image/*" id="previewImg" onChange={handleImageUpload} ref={imgRef} style={{display: 'none'}}/>
                         </div>
                         <div className='courseroutecontainer'>
                             <textarea className='courseroute'></textarea>
