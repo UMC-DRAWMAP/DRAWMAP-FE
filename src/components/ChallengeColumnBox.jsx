@@ -38,7 +38,7 @@ const course = {
 };
 
 
-const ChallengeColumnBox = () => {
+const ChallengeColumnBox = ({ title, city, date, level, info }) => {
 
     const [leftImageId, setLeftImageId] = useState(1);
     const [rightImageId, setRightImageId] = useState(2);
@@ -67,21 +67,21 @@ const ChallengeColumnBox = () => {
         <div className="ChallengeColumnBox">
             <div className='mapimagebox'>
                 <img src={''} alt="" className='mapimage'/>
-                <div className='citybox'>{course.city}</div>
+                <div className='citybox'>{city}</div>
             </div>
             <div className='challengeinfo'>
                 <div>
-                    <p className='coursetitle'>{course.title}</p>
-                    <div style={{display: 'flex', marginBottom: '7px'}}>
+                    <p className='coursetitle'>{title}</p>
+                    <div style={{display: 'flex', marginBottom: '5px'}}>
                         <p className='date'>작성일</p>
-                        <p className='date'>{course.date}</p>
+                        <p className='date'>{date}</p>
                     </div>
                     <div style={{display: 'flex'}}>
                         <p className='level'>난이도</p>
-                        <Stars n={course.level}/>
+                        <Stars n={level}/>
                     </div>
                     <div className='courseinfobox'>
-                        <p className='courseinfo'>{course.info}</p>
+                        <p className='courseinfo'>{info}</p>
                         <div className='buttoncontainer'>
                             <Button img={heartIcon}/>
                             <Button img={bikeIcon} />
