@@ -1,28 +1,4 @@
-:root {
-	// 색상
-	--black-color: #272d35;
-	--green-color: #5d8e5f;
-	--back-color: #f8f5f2;
-	--gray-color: #c2c2c2;
-	--hover-color: #dbd3ca;
-  
-	// 폰트 굵기
-	--regular-font: 400;
-	--semibold-font: 600;
-	--bold-font: 700;
-  }
-  
-  body {
-	background-color: var(--back-color);
-  }
-
-.App {
-	font-family: 'Pretendard';
-	margin: 0 400px;
-	position: relative;
-  }
-  
-  .Footer {
+.Footer {
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -33,32 +9,32 @@
 	align-items: center;
 	background-color: var(--back-color); 
 	padding: 20px; 
-  }
+}
   
-  .Footer img {
+.Footer img {
 	height: 50px; 
 	margin-bottom: 50px; 
-  }
+}
   
-  .Footer .footer-content {
+.Footer .footer-content {
 	display: flex;
 	align-items: center;
-  }
+}
   
-  .Footer .footer-item {
+.Footer .footer-item {
 	margin-right: 1px; 
 	font-size: 3px;
 	display: flex;
 	align-items: center;
-  }
+}
   
-  .Footer .footer-item:not(:last-child) {
+.Footer .footer-item:not(:last-child) {
 	margin-right: 20px; 
-  }
+}
   
-  .Footer .footer-content {
+.Footer .footer-content {
 	flex-direction: row;
 	margin-top: 30px; 
-  }
+}
 
   
