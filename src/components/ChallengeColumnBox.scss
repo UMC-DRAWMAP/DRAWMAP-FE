@@ -1,28 +1,28 @@
 .ChallengeColumnBox {
-    width: 403px;
-    height: 738px;
+    width: 280px;
+    height: 573px;
     border: 1.75px solid black;
     border-radius: 17px;
     .mapimagebox {
         width: 100%;
-        height: 235px;
+        height: 219.74px;
         border-bottom: 1px solid black;
         position: relative;
         border-radius: 17px 17px 0px 0px;
         overflow: hidden;
         .citybox {
             background-color: #5d8e5f;
-            padding-left: 18.82px;
-            padding-right: 18.82px;
-            padding-top: 7.69px;
-            padding-bottom: 7.69px;
+            padding-left: 11.96px;
+            padding-right: 11.96px;
+            padding-top: 4.21px;
+            padding-bottom: 4.21px;
             border-radius: 17px;
             border: 1.72px solid black;
-            font-size: 11px;
+            font-size: 9px;
             font-weight: 600;
             position: absolute;
-            top: 18px;
-            left: 20.89px;
+            top: 12.52px;
+            left: 14.52px;
         }
         .mapimage {
             width: 100%;
@@ -30,35 +30,35 @@
         }
     }
     .challengeinfo {
-        padding-left: 20.89px;
-        padding-right: 20.89px;
-        padding-top: 19.35px;
-        padding-bottom: 19.35px;
+        padding-left: 14.52px;
+        padding-right: 14.52px;
+        padding-top: 14.74px;
+        padding-bottom: 14.74px;
         .coursetitle {
-            font-size: 16px;
+            font-size: 13px;
             font-weight: 600;
             margin: 0;
-            margin-bottom: 18px;
+            margin-bottom: 13.88px;
         }
         .date {
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 600;
             margin-top: 0;
             margin-bottom: 0;
             margin-right: 5px;
         }
         .level {
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 600;
             margin-top: 0;
             margin-bottom: 0;
             margin-right: 5px;
         }
         .courseinfobox {
-            height: 81px;
-            margin-top: 14px;
+            height: 57.17px;
+            margin-top: 11.69px;
             .courseinfo {
-                font-size: 11px;
+                font-size: 10px;
                 font-weight: 600;
                 margin: 0;
                 line-height: 15px;
@@ -67,26 +67,26 @@
                 display: flex;
                 justify-content: flex-end;
                 column-gap: 8.7px;
-                margin-top: 15px;
+                //margin-top: 15px;
             }
         }
         .checkpointheader {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
-            margin-bottom: 5px;
+            margin-top: 22px;
+            margin-bottom: 4px;
             .checkpointtitle {
                 margin: 0;
-                font-size: 14px;
+                font-size: 11px;
                 font-weight: 600;
             }
             .morebutton {
-                width: 48px;
-                height: 24px;
-                border: 2px solid black;
+                width: 42px;
+                height: 20px;
+                border: 1.5px solid black;
                 border-radius: 100px;
-                font-size: 10px;
+                font-size: 8px;
                 font-weight: bold;
                 background-color: var(--back-color);
             }
@@ -102,18 +102,18 @@
         .arrowbuttoncontainer {
             display: flex;
             flex-direction: row;
-            column-gap: 7px;
+            column-gap: 4.57px;
             justify-content: center;
-            margin-top: 15px;
+            margin-top: 10.17px;
         }
     }
 }
 
 .CheckPoint {
     .checkpointimagebox {
-        width: 168px;
-        height: 168px;
-        border: 2px solid black;
+        width: 118.88px;
+        height: 118.88px;
+        border: 1.5px solid black;
         border-radius: 20px;
         overflow: hidden;
         img {
@@ -125,14 +125,15 @@
     .checkpointname {
         margin: 0;
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: bold;
         padding-left: 3px;
     }
     .checkpointplace {
         margin: 0;
-        margin-top: 7px;
-        font-size: 11px;
+        margin-top: 3.8px;
+        font-size: 9px;
         font-weight: 600;
+        padding-left: 3px;
     }
 }
