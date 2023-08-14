@@ -1,7 +1,7 @@
 import { Reset } from 'styled-reset';
 import './App.scss';
 import Button from './components/Button';
-import Img from './assets/images/save.svg';
+import Img from './assets/images/more.svg';
 import ChallengeRowBox from './components/ChallengeRowBox';
 import SmallDrawBox from './components/SmallDrawBox';
 import MapImg from './assets/images/alram.svg';
@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div className="App">
 			<Reset />
-			{/* <Button img={Img} content={'더보기'} type={'default'} /> */}
+			<Button content={'더보기'} type={'text-more'} />
 			<ChallengeRowBox
 				img={MapImg}
 				district={'경기'}

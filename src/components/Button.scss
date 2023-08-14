@@ -9,34 +9,34 @@
 	padding: 5px;
 	font-weight: var(--bold-font);
 	&.default {
-		width: 32.205px;
-		height: 31.831px;
+		width: 22.376px;
+		height: 22.084px;
 		img {
 			width: 80%;
 			height: auto;
 		}
 	}
 	&.more {
-		width: 26.462px;
-		height: 26.975px;
+		width: 18.639px;
+		height: 19px;
 		img {
 			width: auto;
-			height: 85%;
+			height: 130%;
 		}
 	}
 	&.text-btn {
 		display: inline-flex;
 		border-radius: 100px;
 		border: 2px solid var(--black-color);
-		font-size: 16px;
-		padding: 10px 29px;
+		font-size: 10px;
+		padding: 7.258px 18.145px;
 		width: max-content;
 	}
 	&.arrow {
-		width: 26.462px;
-		height: 26.975px;
+		width: 18.606px;
+		height: 18.967px;
 		img {
-			width: 120%;
+			width: 190%;
 			height: auto;
 		}
 	}
@@ -45,7 +45,7 @@
 		padding: 5px 10px;
 		// height: 24px;
 		border: 2px solid var(--black-color);
-		font-size: 10px;
+		font-size: 8px;
 	}
 	&.acting {
 		width: 37px;
