@@ -1,59 +1,65 @@
 .crb-body {
-	font-size: 11px;
-	width: 403px;
+	font-size: 10px;
+	width: 280px;
 	// height: 424.124px;
 	border-radius: 17.206px;
 	border: 1.721px solid var(--black-color);
 	.crb-img {
 		position: relative;
-		width: 403px;
-		height: 234.86px;
+		width: 280px;
+		height: 220.024px;
 		.crb-map-img {
 			border-bottom: 1.721px solid var(--black-color);
-			width: 403px;
-			height: 234.86px;
+			width: 280px;
+			height: 220.024px;
 			border-radius: 17.206px 17.206px 0px 0px;
 		}
 		.crb-district {
 			position: absolute;
-			top: 18.07px;
-			left: 20.89px;
-			width: 57.447px;
-			height: 28.029px;
+			top: 12.54px;
+			left: 14.52px;
+			width: 39.914px;
+			height: 19.446px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			border-radius: 17.206px;
 			border: 1.721px solid var(--black-color);
 			background: var(--green-color);
+			font-size: 9px;
+			font-weight: var(--semibold-font);
 		}
 	}
 	.crb-text {
 		position: relative;
-		height: 146.265px;
-		margin: 16.35px 20.89px 20.65px 20.89px;
+		height: 94.987px;
+		margin: 14.29px 12.77px 43.22px 14.74px;
 		font-weight: var(--semibold-font);
 		.crb-title {
 			font-size: 13px;
-			margin-bottom: 11px;
+			margin-bottom: 14.96px;
 		}
 		.crb-date {
-			margin-bottom: 5px;
+			margin-bottom: 5.69px;
 		}
 		.crb-rating {
-			margin-bottom: 14px;
+			margin-bottom: 10.38px;
 		}
 		.crb-content {
-			margin-bottom: 7.65px;
-			height: 41px;
+			margin-bottom: 6.7px;
+			height: 32px;
 		}
 		.crb-btn-group {
 			display: flex;
 			position: absolute;
-			bottom: 0;
 			right: 0;
 			Button {
-				margin-left: 8.7px;
+				margin-left: 6.25px;
+				width: 22.376px;
+				height: 22.084px;
+				img {
+					width: 150%;
+				}
 			}
 		}
 	}
