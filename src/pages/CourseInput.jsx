@@ -78,7 +78,7 @@ const CourseInput = () => {
                     <p className='inputitem'>코스명</p>
                     <input type="text" className='titleinput'/>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'flex-start', width: '864px', marginTop: '31px'}}>
+                <div style={{display: 'flex', justifyContent: 'flex-start', width: '632px', marginTop: '22.5px'}}>
                     <div className='placeinputcontainer'>
                         <p className='inputitem'>지역</p>
                         <ButtonSelect />
@@ -95,7 +95,7 @@ const CourseInput = () => {
                     <p className='inputitem'>한줄소개</p>
                     <textarea className='detailinput'></textarea>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: '30px'}}>
+                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: '22.5px', width: '632px'}}>
                     <p className='inputitem'>코스 경로</p>
                     <div className='courseinputcontainer'>
                         <div className='courseimagebox'>
@@ -111,7 +111,7 @@ const CourseInput = () => {
                                 <div className='uploadedfilecontainer'>
                                     {selectedFiles.map((file) => (
                                         <div className='uploadedfile'>{file.name}
-                                            <div style={{display: 'inline-block', marginLeft: '10px'}} onClick={handleFileRemove}>
+                                            <div style={{display: 'inline-block', marginLeft: '7px'}} onClick={handleFileRemove}>
                                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" >
                                                     <path d="M6.80446 1.13967L4.44413 3.5L6.80446 5.86033C6.92966 5.98553 7 6.15534 7 6.3324C7 6.50946 6.92966 6.67926 6.80446 6.80446C6.67926 6.92966 6.50946 7 6.3324 7C6.15534 7 5.98553 6.92966 5.86033 6.80446L3.5 4.44413L1.13967 6.80446C1.01447 6.92966 0.844662 7 0.667602 7C0.490543 7 0.320736 6.92966 0.195536 6.80446C0.0703365 6.67926 2.25099e-07 6.50946 2.25099e-07 6.3324C2.25099e-07 6.15534 0.0703365 5.98553 0.195536 5.86033L2.55587 3.5L0.195536 1.13967C0.0703365 1.01447 0 0.844662 0 0.667603C0 0.490543 0.0703365 0.320736 0.195536 0.195537C0.320736 0.0703368 0.490543 2.25098e-07 0.667602 2.25098e-07C0.844661 2.25098e-07 1.01447 0.0703368 1.13967 0.195537L3.5 2.55587L5.86033 0.195537C5.98553 0.0703368 6.15534 0 6.3324 0C6.50946 0 6.67926 0.0703368 6.80446 0.195537C6.92966 0.320736 7 0.490543 7 0.667602C7 0.844662 6.92966 1.01447 6.80446 1.13967Z" fill="black"/>
                                                 </svg>
@@ -119,7 +119,9 @@ const CourseInput = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <Button img={fileuploadicon} type={"default"} onClick={() => selectFile.current.click()} />
+                                <div>
+                                    <Button img={fileuploadicon} type={"default"} onClick={() => selectFile.current.click()} content={"업로드"} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,8 +129,8 @@ const CourseInput = () => {
                 <div className='buttoncontainer'>
                     <button className='registerbutton'>등록하기</button>
                 </div>
+                <img src={character} alt="" style={{width:'880px', marginTop: '101.49px', marginBottom: '40.95px'}}/>
             </div>
-            <img src={character} alt="" style={{width:'1286px', marginTop: '163px', marginBottom: '50px'}}/>
             <Footer />
         </div>
     );
