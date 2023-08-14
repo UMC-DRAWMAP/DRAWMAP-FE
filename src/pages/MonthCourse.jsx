@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+import ButtonSelect from "../components/ButtonSelect";
 import ChallengeColumnBox from "../components/ChallengeColumnBox";
 import Header from "../components/Header";
 
@@ -32,11 +34,17 @@ const MonthCourse = () => {
     return (
         <div className="MonthCourse">
             <Header />
-            <p className='pagetitle'>드로맵 이달의 도전 코스</p>
+            <p className='challengetitle'>드로맵 이달의 도전 코스</p>
             <div className="monthchallengecontainer">
                 {dummyChallengeCourse.map((it) => (
                     <ChallengeColumnBox {...it} />
                 ))}
+            </div>
+            <p className='archivetitle'>도전 코스 Archive</p>
+            <div className="archivebuttoncontainer">
+                <Button />
+                <Button />
+                <ButtonSelect />
             </div>
         </div>
     );
