@@ -1,18 +1,14 @@
 import './SmallDrawBox.scss';
 import DefaultProfile from '../assets/images/profile-mini.svg';
 
-export default function SmallDrawBox(userProfile) {
+export default function SmallDrawBox({ img, userName, userProfile }) {
 	return (
 		<div className="sdb-body">
-			<img
-				src="https://navermaps.github.io/ios-map-sdk/assets/2-3-basic.png"
-				alt="지도 이미지"
-				className="sdb-map-img"
-			/>
+			<img src={img} alt="지도 이미지" className="sdb-map-img" />
 			<div className="sdb-user-info">
-				<span className="sdb-user-name">닉네임</span>
+				<span className="sdb-user-name">{userName}</span>
 				<img
-					src={userProfile ? DefaultProfile : userProfile}
+					src={userProfile ? userProfile : DefaultProfile}
 					alt="유저 프로필 이미지"
 					className="sdb-user-profile-img"
 				/>
