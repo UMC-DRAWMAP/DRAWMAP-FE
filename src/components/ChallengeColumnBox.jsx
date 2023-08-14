@@ -72,7 +72,7 @@ const ChallengeColumnBox = ({ title, city, date, level, info }) => {
             <div className='challengeinfo'>
                 <div>
                     <p className='coursetitle'>{title}</p>
-                    <div style={{display: 'flex', marginBottom: '5px'}}>
+                    <div style={{display: 'flex', marginBottom: '4px'}}>
                         <p className='date'>작성일</p>
                         <p className='date'>{date}</p>
                     </div>
@@ -83,8 +83,8 @@ const ChallengeColumnBox = ({ title, city, date, level, info }) => {
                     <div className='courseinfobox'>
                         <p className='courseinfo'>{info}</p>
                         <div className='buttoncontainer'>
-                            <Button img={heartIcon}/>
-                            <Button img={bikeIcon} />
+                            <Button img={heartIcon} type={'default'}/>
+                            <Button img={bikeIcon} type={'default'}/>
                         </div>
                     </div>
                 </div>
@@ -105,8 +105,8 @@ const ChallengeColumnBox = ({ title, city, date, level, info }) => {
                         </div>
                         }
                         <div className='arrowbuttoncontainer'>
-                            <Button img={leftArrow} onClick={handleChangeLeftButton}/>
-                            <Button img={rightArrow} onClick={handleChangeRightButton}/>
+                            <Button img={leftArrow} onClick={handleChangeLeftButton} type={'more'}/>
+                            <Button img={rightArrow} onClick={handleChangeRightButton} type={'more'}/>
                         </div>
                     </div>
                     }
