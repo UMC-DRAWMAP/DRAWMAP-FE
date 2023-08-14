@@ -5,20 +5,20 @@ import alarmIcon from '../assets/images/alram.svg';
 
 function Header() {
   return (
-    <div className="head">
-      <header className="header">
-        <div className="header__left">
-          <img src={logo_small} alt="Logo" className="header__logo" />
-          <div className="header__nav">
-            <span className="header__nav-item">도전코스</span>
-            <span className="header__nav-item">코스개발</span>
-            <span className="header__nav-item">마이페이지</span>
+    <div className="Header">
+      <header className="head">
+        <div className="head__left">
+          <img src={logo_small} alt="Logo" className="head__left__logo" />
+          <div className="head__left__nav">
+            <span className="head__left__nav__item">도전코스</span>
+            <span className="head__left__nav__item">코스개발</span>
+            <span className="head__left__nav__item">마이페이지</span>
           </div>
         </div>
-        <div className="header__right">
-          <img src={alarmIcon} alt="Alarm" className="header__alarm-icon" />
-          <img src={ProfileIcon} alt="Bike" className="header__profile-icon" />
-          <span className="header__nav-item">로그아웃</span>
+        <div className="head__right">
+          <img src={alarmIcon} alt="Alarm" className="head__right__icon" />
+          <img src={ProfileIcon} alt="Bike" className="head__right__icon" />
+          <span className="head__right__nav__item">로그아웃</span>
         </div>
       </header>
       {/* Add the rest of your content here */}
