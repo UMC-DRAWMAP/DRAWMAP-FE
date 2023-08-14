@@ -1,50 +1,49 @@
 .CourseInput {
-    width: 1246px;
     .pagetitle {
-        font-size: 17px;
+        font-size: 12px;
         font-weight: bold;
         margin: 0;
-        margin-top: 71.96px;
-        margin-bottom: 72.35px;
+        margin-top: 53.95px;
+        margin-bottom: 53.48px;
     }
     .inputcontainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         .inputitem {
-            font-size: 17px;
+            font-size: 11px;
             font-weight: bold;
             padding-left: 5px;
             margin: 0;
-            margin-bottom: 9px;
+            margin-bottom: 8.5px;
 
         }
         .titleinputcontainer {
             .titleinput {
-                width: 840px;
-                height: 45px;
-                border-radius: 20px;
-                border: 2px solid black;
+                width: 603px;
+                height: 32.66px;
+                border-radius: 14.5px;
+                border: 1.5px solid black;
                 background-color: var(--back-color);
-                padding-left: 24px;
-                font-size: 15px;
+                padding-left: 17.42px;
+                font-size: 10px;
             }
         }
         .placeinputcontainer {
-            width: 258px;
+            width: 182px;
             border: 1px solid blue;
         }
         .levelinputcontainer {
-            margin-left: 187.63px;
+            margin-left: 141.83px;
             .levelbutton {
-                width: 64px;
-                height: 39px;
-                border: 2px solid black;
-                border-radius: 100px;
+                width: 45.29px;
+                height: 28.31px;
+                border: 1.5px solid black;
+                border-radius: 72.58px;
                 background-color: var(--back-color);
-                font-size: 16px;
+                font-size: 10px;
                 font-weight: bold;
-                margin-right: 12px;
+                margin-right: 10px;
                 &:hover {
                     background-color: var(--hover-color);
                 }
@@ -54,74 +53,77 @@
             }
         }
         .detailinputcontainer {
-            margin-top: 31px;
+            margin-top: 22.5px;
             .detailinput {
-                width: 804px;
-                height: 82px;
-                border: 2px solid black;
+                width: 585px;
+                height: 88.5px;
+                border: 1.5px solid black;
                 border-radius: 20px;
                 background-color: var(--back-color);
-                padding-top: 20px;
-                padding-bottom: 20px;
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 22px;
+                padding-right: 22px;
                 font-family: 'Pretendard';
-                font-size: 15px;
+                font-size: 10px;
                 resize: none;
             }
         }
         .courseinputcontainer {
-            width: 864px;
             display: flex;
             flex-direction: row;
             .courseimagebox {
-                width: 328.61px;
-                height: 328.61px;
-                border: 2px solid black;
+                width: 238.5px;
+                height: 238.5px;
+                border: 1.5px solid black;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: relative;
                 overflow: hidden;
+                .courseimage {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
             .courseroutecontainer {
-                margin-left: 17.39px;
+                margin-left: 12.62px;
                 .courseroute {
-                    width: 470px;
-                    height: 136px;
-                    border: 2px solid black;
+                    width: 341.96px;
+                    height: 98px;
+                    border: 1.5px solid black;
                     border-radius: 20px;
                     background-color: var(--back-color);
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    padding-left: 24px;
-                    padding-right: 24px;
+                    padding-top: 14.5px;
+                    padding-bottom: 14.5px;
+                    padding-left: 17px;
+                    padding-right: 17px;
                     font-family: 'Pretendard';
-                    font-size: 15px;
+                    font-size: 10px;
                     resize: none;
                 }
                 .filecontainer {
                     display: flex;
                     justify-content: flex-end;
-                    margin-top: 14px;
-                    //height: 135px;
+                    margin-top: 10.58px;
                     .uploadedfilecontainer {
-                        width: 478px;
+                        width: 335.96px;
                         margin-right: 20px;
                         display: flex;
                         flex-direction: row;
                         justify-content: flex-start;
-                        column-gap: 12px;
+                        column-gap: 7.63px;
                         flex-wrap: wrap;
-                        row-gap: 7px;
+                        row-gap: 5px;
                         .uploadedfile {
-                            padding-left: 20px;
-                            padding-right: 20px;
-                            padding-top: 9px;
-                            padding-bottom: 9px;
+                            padding-left: 14.5px;
+                            padding-right: 14.5px;
+                            padding-top: 8px;
+                            padding-bottom: 8px;
                             border: 1.5px solid black;
-                            font-size: 11px;
+                            font-size: 9px;
                             font-weight: 600;
                             border-radius: 20px;
                             text-align: center;
@@ -132,20 +134,20 @@
             }
         }
         .buttoncontainer {
-            width: 867px;
+            width: 632px;
             display: flex;
             justify-content: flex-end;
             .registerbutton {
                 background-color: var(--back-color);
-                padding-left: 50.5px;
-                padding-right: 50.5px;
-                padding-top: 13px;
-                padding-bottom: 13px;
-                border: 2px solid black;
-                border-radius: 26.4px;
-                font-size: 16px;
+                padding-left: 39.5px;
+                padding-right: 39.5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 1.5px solid black;
+                border-radius: 20px;
+                font-size: 10px;
                 font-weight: 600;
-                margin-top: 60px;
+                margin-top: 33.67px;
                 &:hover {
                     background-color: var(--hover-color);
                 }
