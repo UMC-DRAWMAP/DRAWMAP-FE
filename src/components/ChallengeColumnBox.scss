@@ -68,6 +68,11 @@
                 justify-content: flex-end;
                 column-gap: 8.7px;
                 //margin-top: 15px;
+                Button {
+                    img {
+                        width: 150%;
+                    }
+                }
             }
         }
         .checkpointheader {
@@ -105,6 +110,11 @@
             column-gap: 4.57px;
             justify-content: center;
             margin-top: 7px;
+            Button {
+                img {
+                    width: 200%;
+                }
+            }
         }
     }
 }
