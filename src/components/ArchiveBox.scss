@@ -12,7 +12,10 @@
 		height: 169px;
 		border-bottom-left-radius: 16px;
 		background: linear-gradient(0, #868686 1%, rgba(217, 217, 217, 0) 20%);
-
+		img {
+			border-top-left-radius: 17.206px;
+			border-bottom-left-radius: 17.206px;
+		}
 		.ab-map-img {
 			border-right: 1.721px solid var(--black-color);
 			width: 169.933px;
