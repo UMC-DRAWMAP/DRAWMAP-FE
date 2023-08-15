@@ -6,6 +6,7 @@ import ChallengeRowBox from './components/ChallengeRowBox';
 import SmallDrawBox from './components/SmallDrawBox';
 import MapImg from './assets/images/alram.svg';
 import SmallMap from './assets/images/heart.svg';
+import ArchiveBox from './components/ArchiveBox';
 
 function App() {
 	return (
@@ -21,6 +22,15 @@ function App() {
 				content={'안녕하세요'}
 			/>
 			<SmallDrawBox img={SmallMap} userName={'닉네임'} />
+			<ArchiveBox
+				img={MapImg}
+				district={'경기'}
+				userName={'닉네임'}
+				title={'개구리'}
+				date={'2022.06.02'}
+				rating={'상'}
+				content={'안녕하세요'}
+			/>
 		</div>
 	);
 }
