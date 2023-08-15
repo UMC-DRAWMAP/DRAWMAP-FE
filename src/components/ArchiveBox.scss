@@ -1,53 +1,83 @@
 .archive-box {
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    width: 616px;
-    height: 244px;
-    border-radius: 20px;
-    border: 1.721px solid var(--black-color);
-    display: flex;
-    align-items: center;
-  
-    .archive-content {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-  
-      .archive-icon {
-        position: absolute;
-        font-size: 13px;
-        font-weight: var(--bold-font);
-      }
-  
-      .archive-date,
-      .archive-text,
-      .archive-difficulty{
-        position: absolute;
-        font-size: 10px;
-      }
-  
-      .archive-icon img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    /* 추가된 서울 박스 스타일 */
-  .seoul-box {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 17px;
-    border-color : black;
-    border: 2px solid var(--black-color);
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-size: 10px;
+	width: 430px;
+	height: 169px;
+	border-radius: 17.206px;
+	border: 1.721px solid var(--black-color);
+	display: flex;
+	flex-direction: row;
+	.ab-img {
+		position: relative;
+		width: 169.933px;
+		height: 169px;
+		border-bottom-left-radius: 16px;
+		background: linear-gradient(0, #868686 1%, rgba(217, 217, 217, 0) 20%);
 
-    font-size: 10px;
-  }
-  }
-  
+		.ab-map-img {
+			border-right: 1.721px solid var(--black-color);
+			width: 169.933px;
+			height: 168.603px;
+		}
+		.ab-district {
+			position: absolute;
+			top: 12.54px;
+			left: 14.52px;
+			width: 41.299px;
+			height: 19.996px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 17.206px;
+			border: 1.721px solid var(--black-color);
+			background: var(--green-color);
+			font-size: 9px;
+			font-weight: var(--semibold-font);
+		}
+		.ab-user-info {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			bottom: 5.83px;
+			right: 7.28px;
+			.ab-user-name {
+				font-size: 11px;
+				font-weight: var(--bold-font);
+				margin-right: 4.99px;
+			}
+			.ab-user-profile-img {
+				width: 20.526px;
+				height: 20.439px;
+			}
+		}
+	}
+	.ab-text {
+		position: relative;
+		width: 260.067px;
+		margin: 15px 15.69px 10.06px 17.82px;
+		font-weight: var(--semibold-font);
+		.ab-title {
+			font-size: 13px;
+			margin-bottom: 13.56px;
+		}
+		.ab-date {
+			margin-bottom: 5.21px;
+		}
+		.ab-rating {
+			margin-bottom: 14.54px;
+		}
+		.ab-content {
+			height: 59px;
+		}
+		.ab-btn-group {
+			display: flex;
+			position: absolute;
+			right: 0;
+			Button {
+				margin-left: 6.25px;
+				img {
+					width: 150%;
+				}
+			}
+		}
+	}
+}
