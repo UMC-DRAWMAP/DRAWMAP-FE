@@ -13,8 +13,7 @@ function App() {
 	return (
 		<div className="App">
 			<Reset />
-			{/* <CourseList /> */}
-			<ArchiveBox />
+			<CourseList />
 		</div>
 	);
 }

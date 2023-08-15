@@ -1,0 +1,30 @@
+.course-list {
+	.Header {
+		margin-bottom: 53.95px;
+	}
+	.cl-title {
+		font-size: 12px;
+		font-weight: var(--bold-font);
+		margin-bottom: 12.48px;
+	}
+	.cl-btn-group {
+		margin-bottom: 16px;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		.btn {
+			&.text-btn {
+				margin-right: 8px;
+				padding: 4px 12px;
+			}
+			&.default {
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+	.archive-box {
+		margin-right: 70px;
+		margin-bottom: 15px;
+	}
+}

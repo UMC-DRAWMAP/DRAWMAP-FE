@@ -1,7 +1,9 @@
+import './CourseList.scss';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import CourseListView from '../components/CourseListView';
+import PencilImg from '../assets/images/pencil.svg';
 
 export default function CourseList() {
 	return (
@@ -12,6 +14,7 @@ export default function CourseList() {
 				<Button type={'text-btn'} content={'인기순'} />
 				<Button type={'text-btn'} content={'최신순'} />
 				<Button type={'text-btn'} content={'지역별'} />
+				<Button img={PencilImg} type={'default'} />
 			</div>
 			<CourseListView />
 			<Footer />
