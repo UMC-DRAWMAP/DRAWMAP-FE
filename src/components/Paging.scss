@@ -1,0 +1,50 @@
+.gr {
+	color: #000;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight: var(--regular-font);
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+ul.pagination li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.pagination li:first-child,
+ul.pagination li:last-child {
+	display: none;
+}
+
+ul.pagination li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1rem;
+}
+
+ul.pagination li.active a {
+	font-weight: 800;
+}
+ul.pagination li.active {
+	font-weight: 800;
+}
+ul.pagination li a:hover,
+ul.pagination li a.active {
+	color: #000;
+}
+.page-selection {
+	width: 48px;
+	height: 30px;
+	color: #000;
+}
