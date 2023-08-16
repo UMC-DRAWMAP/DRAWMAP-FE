@@ -37,58 +37,11 @@ const dataList = [
 		item: '충청',
 	},
 ];
-// const dataList = {
-// 	1: {
-// 		item: '서울',
-// 	},
-// 	2: {
-// 		item: '경기',
-// 	},
-// 	3: {
-// 		item: '인천',
-// 	},
-// 	4: {
-// 		item: '대전',
-// 	},
-// 	5: {
-// 		item: '광주',
-// 	},
-// 	6: {
-// 		item: '울산',
-// 	},
-// 	7: {
-// 		item: '부산',
-// 	},
-// 	8: {
-// 		item: '대구',
-// 	},
-// 	9: {
-// 		item: '제주',
-// 	},
-// 	10: {
-// 		item: '강원',
-// 	},
-// 	11: {
-// 		item: '충청',
-// 	},
-// };
 
 export default function ButtonSelect() {
 	const [isActive, setIsActive] = useState(false);
 
-	// console.log(Object.keys(dataList));
-	// json 형태일 때 값 불러오기
-	// for (const key in Object.keys(dataList)) {
-	// 	let li = `<li>${dataList[key]}</li>`;
-	// 	// console.log(dataList[key]);
-	// 	console.log(li);
-	// }
-
 	return (
-		// name : select name
-		// id : select id
-		// optionTitle : value 없이 select 첫 단에만 글을 넣고 싶을 때 사용
-		// children : option 태그의 위치 (해당 컴포넌트를 사용할 때, 컴포넌트를 여닫은 사이에 원하는 option 태그 작성)
 		<div
 			className="sbtn-wrapper"
 			onClick={() => {
@@ -106,34 +59,10 @@ export default function ButtonSelect() {
 			</div>
 			<div className="sbtn-content" style={{ display: isActive ? 'block' : 'none' }}>
 				<ul className="sbtn-options">
+					{/* 받은 데이터 뿌리기 */}
 					{dataList.map((it) => {
-						<li>{it.value}</li>;
+						return <li>{it.item}</li>;
 					})}
-					{/* <li>서울특별시장안구우우루우ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</li>
-					<li>경기</li>
-					<li>인천</li>
-					<li>대전</li>
-					<li>부산</li>
-					<li>서울</li>
-					<li>경기</li>
-					<li>인천</li>
-					<li>대전</li>
-					<li>부산</li>
-					<li>서울</li>
-					<li>경기</li>
-					<li>인천</li>
-					<li>대전</li>
-					<li>부산</li>
-					<li>서울</li>
-					<li>경기</li>
-					<li>인천</li>
-					<li>대전</li>
-					<li>부산</li>
-					<li>서울</li>
-					<li>경기</li>
-					<li>인천</li>
-					<li>대전</li>
-					<li>부산</li> */}
 				</ul>
 			</div>
 		</div>
