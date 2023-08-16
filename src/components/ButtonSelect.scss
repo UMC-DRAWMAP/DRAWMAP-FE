@@ -11,6 +11,7 @@
 	.select-btn {
 		display: inline-flex;
 		height: 28.306px;
+		width: 93px;
 		padding: 7.258px 15.968px 7.258px 21.048px;
 		justify-content: center;
 		align-items: center;
@@ -18,6 +19,11 @@
 		border: 1.452px solid var(--black-color);
 		background: var(--back-color);
 		cursor: pointer;
+		.sbtn-select {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 		.sbtn-drop-down {
 			width: 13.79px;
 			height: 14.058px;
@@ -28,7 +34,7 @@
 	.sbtn-content {
 		display: none;
 		margin-top: 10px;
-		width: 103px;
+		width: 93px;
 		border-radius: 13.618px;
 		border: 1.362px solid var(--black-color);
 		background: var(--back-color);

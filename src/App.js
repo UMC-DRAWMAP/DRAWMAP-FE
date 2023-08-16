@@ -32,7 +32,7 @@ function App() {
 				rating={'상'}
 				content={'안녕하세요'}
 			/> */}
-			<ButtonSelect />
+			<ButtonSelect title={'지역'} />
 		</div>
 	);
 }

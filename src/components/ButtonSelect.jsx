@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const dataList = [
 	{
-		item: '서울',
+		item: '서울특별시장안구드',
 	},
 	{
 		item: '경기',
@@ -38,8 +38,9 @@ const dataList = [
 	},
 ];
 
-export default function ButtonSelect() {
+export default function ButtonSelect({ title }) {
 	const [isActive, setIsActive] = useState(false);
+	const [selectValue, setSelectValue] = useState('');
 
 	return (
 		<div
@@ -49,7 +50,7 @@ export default function ButtonSelect() {
 			}}
 		>
 			<div className="select-btn">
-				<span>Select Value</span>
+				<span className="sbtn-select">{selectValue ? selectValue : title}</span>
 				<img
 					className="sbtn-drop-down"
 					src={DropBtn}
@@ -61,7 +62,15 @@ export default function ButtonSelect() {
 				<ul className="sbtn-options">
 					{/* 받은 데이터 뿌리기 */}
 					{dataList.map((it) => {
-						return <li>{it.item}</li>;
+						return (
+							<li
+								onClick={() => {
+									setSelectValue(`${it.item}`);
+								}}
+							>
+								{it.item}
+							</li>
+						);
 					})}
 				</ul>
 			</div>
