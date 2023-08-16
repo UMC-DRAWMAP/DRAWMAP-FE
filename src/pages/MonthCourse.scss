@@ -22,4 +22,20 @@
         column-gap: 8px;
         margin-bottom: 9px;
     }
+    .archiveboxcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-around;
+        justify-items: center;
+        row-gap: 20px;
+        height: 550px;
+    }
+    .arrowbuttoncontainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+        margin-top: 16px;
+    }
 }

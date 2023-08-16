@@ -1,9 +1,15 @@
+import ArchiveBox from "../components/ArchiveBox";
 import Button from "../components/Button";
 import ButtonSelect from "../components/ButtonSelect";
 import ChallengeColumnBox from "../components/ChallengeColumnBox";
 import Header from "../components/Header";
+import MapImg from '../assets/images/alram.svg';
+import leftArrow from '../assets/images/arrow-left.svg';
+import rightArrow from '../assets/images/arrow-right.svg';
 
 import '../pages/MonthCourse.scss';
+import Footer from "../components/Footer";
+import { useState } from "react";
 
 const dummyChallengeCourse = [
     {
@@ -29,8 +35,197 @@ const dummyChallengeCourse = [
     },
 ];
 
+const dummyData = [
+    {   img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '1',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '2',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '3',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '4',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '5',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '6',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '7',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '8',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '9',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '10',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '11',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '12',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '13',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '14',
+        content: '안녕하세요'
+    },
+    {
+        img: MapImg,
+        district: '경기',
+        userName: '닉네임',
+        title: '개구리',
+        date: '2022.06.22',
+        rating: '15',
+        content: '안녕하세요'
+    },
+];
+
 
 const MonthCourse = () => {
+
+    const [startIdx, setStartIdx] = useState(0);
+    const [endIdx, setEndIdx] = useState(5);
+    const [isStart, setIsStart] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
+
+    let currentArray = dummyData.slice(startIdx, endIdx + 1);
+    console.log(currentArray);
+
+    console.log(`startIdx is ${startIdx}`);
+    //console.log(endIdx);
+
+    const handleChangeLeftButton  = () => {
+    //     // setStartIdx(startIdx - 6);
+    //     // if (isEnd === true) {
+    //     //     setEndIdx(endIdx - (dummyData.length % 6));
+    //     //     //setStartIdx(startIdx - 6);
+    //     //     setIsEnd(false);
+    //     // } else {
+    //     //     //setEndIdx(endIdx - 6);
+    //     //     setStartIdx(startIdx - 6);
+    //     //     if (startIdx === 0) {
+    //     //         setIsStart(true);
+    //     //     }
+    //     // }
+
+        setIsEnd(false);
+
+        if (isEnd === true) {
+            setEndIdx(endIdx - (dummyData.length % 6));
+        } else {
+            setEndIdx(endIdx - 6);
+        }
+        if (startIdx - 6 === 0) {
+            setIsStart(true);
+            setStartIdx(startIdx - 6);
+        } else {
+            setStartIdx(startIdx - 6);
+        }
+    };
+
+    const handleChangeRightButton = () => {
+        setIsStart(false);
+        setStartIdx(startIdx + 6);
+        if (endIdx + 6 > dummyData.length + 1) {
+            setEndIdx(endIdx + (dummyData.length % 6));
+            setIsEnd(true);
+        } else {
+            setEndIdx(endIdx + 6);
+        }
+    };
+
     return (
         <div className="MonthCourse">
             <Header />
@@ -46,6 +241,25 @@ const MonthCourse = () => {
                 <Button />
                 <ButtonSelect />
             </div>
+            <div className="archiveboxcontainer">
+                {currentArray.map((it)=> (
+                    <ArchiveBox {...it}/>
+                ))}
+            </div>
+                {dummyData.length <= 6 ?
+                <div className='arrowbuttoncontainer'></div> : 
+                isStart === true ? 
+                <div className='arrowbuttoncontainer'>
+                    <Button img={rightArrow} onClick={handleChangeRightButton} type={'more'}/>
+                    </div> :
+                    isEnd === true ?
+                    <div className='arrowbuttoncontainer'> <Button img={leftArrow} onClick={handleChangeLeftButton}  type={'more'}/> </div> :
+                    <div className='arrowbuttoncontainer'>
+                        <Button img={leftArrow} onClick={handleChangeLeftButton}  type={'more'}/>
+                        <Button img={rightArrow} onClick={handleChangeRightButton} type={'more'}/>
+                    </div> 
+                }
+            <Footer />
         </div>
     );
 };
