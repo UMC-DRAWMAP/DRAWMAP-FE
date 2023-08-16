@@ -181,27 +181,9 @@ const MonthCourse = () => {
     const [isEnd, setIsEnd] = useState(false);
 
     let currentArray = dummyData.slice(startIdx, endIdx + 1);
-    console.log(currentArray);
-
-    console.log(`startIdx is ${startIdx}`);
-    //console.log(endIdx);
 
     const handleChangeLeftButton  = () => {
-    //     // setStartIdx(startIdx - 6);
-    //     // if (isEnd === true) {
-    //     //     setEndIdx(endIdx - (dummyData.length % 6));
-    //     //     //setStartIdx(startIdx - 6);
-    //     //     setIsEnd(false);
-    //     // } else {
-    //     //     //setEndIdx(endIdx - 6);
-    //     //     setStartIdx(startIdx - 6);
-    //     //     if (startIdx === 0) {
-    //     //         setIsStart(true);
-    //     //     }
-    //     // }
-
         setIsEnd(false);
-
         if (isEnd === true) {
             setEndIdx(endIdx - (dummyData.length % 6));
         } else {
@@ -237,9 +219,9 @@ const MonthCourse = () => {
             </div>
             <p className='archivetitle'>도전 코스 Archive</p>
             <div className="archivebuttoncontainer">
+                {/* <Button />
                 <Button />
-                <Button />
-                <ButtonSelect />
+                <ButtonSelect /> */}
             </div>
             <div className="archiveboxcontainer">
                 {currentArray.map((it)=> (
