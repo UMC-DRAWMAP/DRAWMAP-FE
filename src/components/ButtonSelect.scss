@@ -1,18 +1,69 @@
-select {
-	display: inline-flex;
-	padding: 10px 22px 10px 29px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	border-radius: 100px;
-	border: 2px solid var(--black-color);
-	background: var(--back-color);
-	option {
-		color: red;
-		font-size: 16px;
-		font-weight: 700;
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.sbtn-wrapper {
+	font-size: 10px;
+	font-weight: var(--bold-font);
+	width: 103px;
+	.select-btn {
+		display: inline-flex;
+		height: 28.306px;
+		padding: 7.258px 15.968px 7.258px 21.048px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 72.58px;
+		border: 1.452px solid var(--black-color);
+		background: var(--back-color);
+		cursor: pointer;
+		.sbtn-drop-down {
+			width: 13.79px;
+			height: 14.058px;
+			margin-left: 7.26px;
+			transition: transform 0.2s linear;
+		}
 	}
-	&:hover {
-		background-color: var(--hover-color);
+	.sbtn-content {
+		display: none;
+		margin-top: 10px;
+		width: 103px;
+		border-radius: 13.618px;
+		border: 1.362px solid var(--black-color);
+		background: var(--back-color);
+		box-shadow: 0px 0px 13.61832046508789px 0px rgba(0, 0, 0, 0.35);
+		.sbtn-options {
+			overflow-y: auto;
+			max-height: 197px;
+			margin: 16px;
+			padding-right: 9px;
+			&::-webkit-scrollbar {
+				width: 2.043px;
+				border-radius: 13.618px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #737373;
+				border-radius: 13.618px;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: #d9d9d9;
+				border-radius: 13.618px;
+			}
+			li {
+				font-size: 9px;
+				font-weight: var(--semibold-font);
+				padding: 5px 0 5px 5px;
+				cursor: pointer;
+				// 말줄임 코드
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				&:hover {
+					background: var(--hover-color);
+					border-radius: 6px;
+				}
+			}
+		}
 	}
 }

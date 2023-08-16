@@ -7,12 +7,13 @@ import SmallDrawBox from './components/SmallDrawBox';
 import MapImg from './assets/images/alram.svg';
 import SmallMap from './assets/images/heart.svg';
 import ArchiveBox from './components/ArchiveBox';
+import ButtonSelect from './components/ButtonSelect';
 
 function App() {
 	return (
 		<div className="App">
 			<Reset />
-			<Button content={'더보기'} type={'text-more'} />
+			{/* <Button content={'더보기'} type={'text-more'} />
 			<ChallengeRowBox
 				img={MapImg}
 				district={'경기'}
@@ -30,7 +31,8 @@ function App() {
 				date={'2022.06.02'}
 				rating={'상'}
 				content={'안녕하세요'}
-			/>
+			/> */}
+			<ButtonSelect />
 		</div>
 	);
 }
