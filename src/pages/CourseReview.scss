@@ -1,0 +1,127 @@
+.CourseReview {
+    .monthchallengetitle {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 53.95px;
+        margin-bottom: 9px;
+    }
+    .monthchallengecontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        .monthchallengeimage {
+            width: 433.65px;
+            height: 434.36px;
+            border-radius: 14px 0 0 14px;
+            border: 1.5px solid black;
+            position: relative;
+            .nicknamebox {
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 6.35px;
+                bottom: 14px;
+                right: 21.86px;
+                .nickname {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                .sdb-user-profile-img {
+                    width: 24.68px;
+                    height: 24.68px;
+                }
+            }
+        }
+        .monthchallengeinfo {
+            width: 447.76px;
+            height: 434.36px;
+            border-radius: 0 14px 14px 0;
+            border: 1.5px solid black;
+            border-left: none;
+            position: relative;
+            padding-left: 35.96px;
+            padding-top: 30.32px;
+            padding-bottom: 30.32px;
+            padding-right: 93.08px;
+            Button {
+                position: absolute;
+                top: 21.86px;
+                right: 21.86px;
+                img {
+                    width: 150%;
+                }
+            }
+            .coursename {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .usernumber {
+                font-size: 10px;
+                margin-top: 12px;
+                line-height: 15px;
+                margin-bottom: 36.54px;
+            }
+            .itemtitle {
+                font-size: 11px;
+                font-weight: bold;
+            }
+            .levelcontainer {
+                .levelboxcontainer {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 8.34px;
+                    margin-top: 5.33px;
+                    .levelbox {
+                        width: 51px;
+                        height: 27px;
+                        line-height: 24px;
+                        border-radius: 70.51px;
+                        border: 1.5px solid black;
+                        font-size: 11px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+            .placecontainer {
+                margin-top: 16.62px;
+                .placeboxcontainer {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 9.82px;
+                    margin-top: 5.33px;
+                    .placebox {
+                        padding-top: 7.05px;
+                        padding-bottom: 7.05px;
+                        padding-left: 20.45px;
+                        padding-right: 20.45px;
+                        font-size: 11px;
+                        font-weight: bold;
+                        border: 1.5px solid black;
+                        border-radius: 70.51px;
+                    }
+                }
+            }
+            .coursecontainer {
+                margin-top: 27.19px;
+                .coursebox {
+                    height: 41px;
+                    font-size: 11px;
+                    line-height: 15px;
+                    margin-top: 4.63px;
+                }
+            }
+            .introductioncontainer {
+                margin-top: 27.19px;
+                .introductionbox {
+                    height: 41px;
+                    font-size: 11px;
+                    line-height: 15px;
+                    margin-top: 4.63px;
+                }
+            }
+        }
+    }
+}
