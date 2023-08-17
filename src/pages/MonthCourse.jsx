@@ -219,9 +219,9 @@ const MonthCourse = () => {
             </div>
             <p className='archivetitle'>도전 코스 Archive</p>
             <div className="archivebuttoncontainer">
-                {/* <Button />
-                <Button />
-                <ButtonSelect /> */}
+                <Button type={'text-btn'} content={'인기순'}/>
+                <Button type={'text-btn'} content={'최신순'}/>
+                <ButtonSelect />
             </div>
             <div className="archiveboxcontainer">
                 {currentArray.map((it)=> (
