@@ -56,7 +56,7 @@
         }
         .courseinfobox {
             height: 57.17px;
-            margin-top: 11.69px;
+            margin-top: 11px;
             .courseinfo {
                 font-size: 10px;
                 font-weight: 600;
@@ -68,13 +68,18 @@
                 justify-content: flex-end;
                 column-gap: 8.7px;
                 //margin-top: 15px;
+                Button {
+                    img {
+                        width: 150%;
+                    }
+                }
             }
         }
         .checkpointheader {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 22px;
+            margin-top: 10px;
             margin-bottom: 4px;
             .checkpointtitle {
                 margin: 0;
@@ -104,15 +109,20 @@
             flex-direction: row;
             column-gap: 4.57px;
             justify-content: center;
-            margin-top: 10.17px;
+            margin-top: 7px;
+            Button {
+                img {
+                    width: 200%;
+                }
+            }
         }
     }
 }
 
 .CheckPoint {
     .checkpointimagebox {
-        width: 118.88px;
-        height: 118.88px;
+        width: 115.88px;
+        height: 115.88px;
         border: 1.5px solid black;
         border-radius: 20px;
         overflow: hidden;
