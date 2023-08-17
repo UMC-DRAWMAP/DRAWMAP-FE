@@ -19,6 +19,7 @@
 		border: 1.452px solid var(--black-color);
 		background: var(--back-color);
 		cursor: pointer;
+		z-index: 999;
 		.sbtn-select {
 			white-space: nowrap;
 			overflow: hidden;
