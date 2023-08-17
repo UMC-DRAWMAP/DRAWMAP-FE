@@ -1,0 +1,16 @@
+.PreviewBox {
+    width: 238.5px;
+    height: 238.5px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .courseimage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
