@@ -124,4 +124,84 @@
             }
         }
     }
+    .certifytitle {
+        font-size: 12px;
+        font-weight: bold;
+        //margin-top: 31.77px;
+        margin-top: 60.14px;
+        margin-bottom: 9px;
+    }
+    .certifycontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        .certifybox {
+            width: 628.78px;
+            height: 238.5px;
+            border: 1.5px solid black;
+            border-radius: 14px;
+            margin-left: 15.55px;
+            padding-top: 23.24px;
+            padding-bottom: 23.24px;
+            padding-left: 24.65px;
+            padding-right: 24.65px;
+            .certifyheader {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .certifyheaderleft {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .sdb-user-profile-img {
+                        width: 24.68px;
+                        height: 24.68px;
+                    }
+                    .writer {
+                        margin-left: 5px;
+                        font-size: 11px;
+                        font-weight: 500;
+                    }
+                    .satisfaction {
+                        margin-left: 33.38px;
+                        margin-right: 5px;
+                        font-size: 11px;
+                        font-weight: 500;
+                    }
+                }
+                .certifyheaderright {
+                    font-size: 11px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .certifytextarea {
+                margin-top: 15px;
+                background-color: var(--back-color);
+                resize: none;
+                font-family: 'Pretendard';
+                height: 130px !important;
+                overflow: auto;
+            }
+            .buttoncontainer {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                Button {
+                    margin-top: 5px;
+                    img {
+                        width: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .reviewtitle {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 60.14px;
+        margin-bottom: 9px;
+    }
 }

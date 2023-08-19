@@ -2,8 +2,10 @@ import Header from '../components/Header';
 import Button from '../components/Button';
 import '../pages/CourseReview.scss';
 import DefaultProfile from '../assets/images/profile-mini.svg';
-import heartIcon from '../assets/images/heart.svg'
+import heartIcon from '../assets/images/heart.svg';
 import { useState, useEffect } from 'react';
+import PreviewBox from '../components/PreviewBox';
+import uploadIcon from '../assets/images/save.svg';
 
 // 더미 데이터
 const dummyPlaceList = ['서울특별시', '성북구', '동대문구'];
@@ -15,6 +17,8 @@ const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
     const [highLevelButtonColor, setHighLevelButtonColor] = useState('--back-color');
     const [middleLevelButtonColor, setMiddleLevelButtonColor] = useState('--back-color');
     const [lowLevelButtonColor, setLowLevelButtonColor] = useState('--back-color');
+
+    const [satisfaction, setSatisfication] = useState(3);
 
 
 
@@ -38,7 +42,33 @@ const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
         }
     }, [level]);
 
-    const month = new Date().getMonth() + 1;
+    const handleClickStar1 = () => {
+        setSatisfication(1);
+    };
+
+    const handleClickStar2 = () => {
+        setSatisfication(2);
+    };
+
+    const handleClickStar3 = () => {
+        setSatisfication(3);
+    };
+
+    const handleClickStar4 = () => {
+        setSatisfication(4);
+    };
+
+    const handleClickStar5 = () => {
+        setSatisfication(5);
+    };
+
+    var today = new Date();
+    var month = today.getMonth() + 1;
+    var year = today.getFullYear();
+    var zeromonth = ('0' + (today.getMonth() + 1)).slice(-2);
+    var zeroday = ('0' + today.getDate()).slice(-2);
+
+    var dateString = year + '.' + zeromonth  + '.' + zeroday;
 
     return (
         <div className="CourseReview">
@@ -93,6 +123,38 @@ const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
                     </div>
                 </div>
             </div>
+            <p className='certifytitle'>도전 인증하기</p>
+            <div className='certifycontainer'>
+                <PreviewBox />
+                <div className='certifybox'>
+                    <div className='certifyheader'>
+                        <div className='certifyheaderleft'>
+                            <img
+                                src={userProfile ? userProfile : DefaultProfile}
+                                alt="유저 프로필 이미지"
+                                className="sdb-user-profile-img"
+                            />
+                            <p className='writer'>작성자</p>
+                            <p className='satisfaction'>만족도</p>
+                            <div>
+                                <span onClick={handleClickStar1}>★</span>
+                                {satisfaction >= 2 ? <span onClick={handleClickStar2}>★</span> : <span onClick={handleClickStar2}>☆</span>}
+                                {satisfaction >= 3 ? <span onClick={handleClickStar3}>★</span> : <span onClick={handleClickStar3}>☆</span>}
+                                {satisfaction >= 4 ? <span onClick={handleClickStar4}>★</span> : <span onClick={handleClickStar4}>☆</span>}
+                                {satisfaction === 5 ? <span onClick={handleClickStar5}>★</span> : <span onClick={handleClickStar5}>☆</span>}
+                            </div>
+                        </div>
+                        <div className='certifyheaderright'>
+                            {dateString}
+                        </div>
+                    </div>
+                    <textarea className='certifytextarea'></textarea>
+                    <div className='buttoncontainer'>
+                        <Button img={uploadIcon} type={'default'}/>
+                    </div>
+                </div>
+            </div>
+            <p className='reviewtitle'>한줄 리뷰</p>
         </div>
     )
 };
