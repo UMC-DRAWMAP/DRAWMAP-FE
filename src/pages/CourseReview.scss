@@ -1,0 +1,207 @@
+.CourseReview {
+    .monthchallengetitle {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 53.95px;
+        margin-bottom: 9px;
+    }
+    .monthchallengecontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        .monthchallengeimage {
+            width: 433.65px;
+            height: 434.36px;
+            border-radius: 14px 0 0 14px;
+            border: 1.5px solid black;
+            position: relative;
+            .nicknamebox {
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 6.35px;
+                bottom: 14px;
+                right: 21.86px;
+                .nickname {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                .sdb-user-profile-img {
+                    width: 24.68px;
+                    height: 24.68px;
+                }
+            }
+        }
+        .monthchallengeinfo {
+            width: 447.76px;
+            height: 434.36px;
+            border-radius: 0 14px 14px 0;
+            border: 1.5px solid black;
+            border-left: none;
+            position: relative;
+            padding-left: 35.96px;
+            padding-top: 30.32px;
+            padding-bottom: 30.32px;
+            padding-right: 93.08px;
+            Button {
+                position: absolute;
+                top: 21.86px;
+                right: 21.86px;
+                img {
+                    width: 150%;
+                }
+            }
+            .coursename {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .usernumber {
+                font-size: 10px;
+                margin-top: 12px;
+                line-height: 15px;
+                margin-bottom: 36.54px;
+            }
+            .itemtitle {
+                font-size: 11px;
+                font-weight: bold;
+            }
+            .levelcontainer {
+                .levelboxcontainer {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 8.34px;
+                    margin-top: 5.33px;
+                    .levelbox {
+                        width: 51px;
+                        height: 27px;
+                        line-height: 24px;
+                        border-radius: 70.51px;
+                        border: 1.5px solid black;
+                        font-size: 11px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+            .placecontainer {
+                margin-top: 16.62px;
+                .placeboxcontainer {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 9.82px;
+                    margin-top: 5.33px;
+                    .placebox {
+                        padding-top: 7.05px;
+                        padding-bottom: 7.05px;
+                        padding-left: 20.45px;
+                        padding-right: 20.45px;
+                        font-size: 11px;
+                        font-weight: bold;
+                        border: 1.5px solid black;
+                        border-radius: 70.51px;
+                    }
+                }
+            }
+            .coursecontainer {
+                margin-top: 27.19px;
+                .coursebox {
+                    height: 41px;
+                    font-size: 11px;
+                    line-height: 15px;
+                    margin-top: 4.63px;
+                }
+            }
+            .introductioncontainer {
+                margin-top: 27.19px;
+                .introductionbox {
+                    height: 41px;
+                    font-size: 11px;
+                    line-height: 15px;
+                    margin-top: 4.63px;
+                }
+            }
+        }
+    }
+    .certifytitle {
+        font-size: 12px;
+        font-weight: bold;
+        //margin-top: 31.77px;
+        margin-top: 60.14px;
+        margin-bottom: 9px;
+    }
+    .certifycontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        .certifybox {
+            width: 628.78px;
+            height: 238.5px;
+            border: 1.5px solid black;
+            border-radius: 14px;
+            margin-left: 15.55px;
+            padding-top: 23.24px;
+            padding-bottom: 23.24px;
+            padding-left: 24.65px;
+            padding-right: 24.65px;
+            .certifyheader {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .certifyheaderleft {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .sdb-user-profile-img {
+                        width: 24.68px;
+                        height: 24.68px;
+                    }
+                    .writer {
+                        margin-left: 5px;
+                        font-size: 11px;
+                        font-weight: 500;
+                    }
+                    .satisfaction {
+                        margin-left: 33.38px;
+                        margin-right: 5px;
+                        font-size: 11px;
+                        font-weight: 500;
+                    }
+                }
+                .certifyheaderright {
+                    font-size: 11px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .certifytextarea {
+                margin-top: 15px;
+                background-color: var(--back-color);
+                resize: none;
+                font-family: 'Pretendard';
+                height: 130px !important;
+                overflow: auto;
+            }
+            .buttoncontainer {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                Button {
+                    margin-top: 5px;
+                    img {
+                        width: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .reviewtitle {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 60.14px;
+        margin-bottom: 9px;
+    }
+}
