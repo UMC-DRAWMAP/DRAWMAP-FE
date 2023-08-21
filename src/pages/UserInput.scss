@@ -1,0 +1,89 @@
+.UserInput {
+  width: 1246px;
+  .pagetitle {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+      margin-top: 71.96px;
+      margin-bottom: 72.35px;
+  }
+  .inputcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .inputitem {
+          font-size: 17px;
+          font-weight: bold;
+          padding-left: 5px;
+          margin: 0;
+          margin-bottom: 9px;
+
+      }
+      .titleinputcontainer {
+          .titleinput {
+              width: 450px;
+              height: 45px;
+              border-radius: 20px;
+              border: 2px solid black;
+              background-color: var(--back-color);
+              padding-left: 24px;
+              font-size: 15px;
+          }
+      }
+      
+      .regioninputcontainer {
+          margin-left: 187.63px;
+          .regionbutton {
+              width: 88.5px;
+              height: 39px;
+              border: 2px solid black;
+              border-radius: 100px;
+              background-color: var(--back-color);
+              font-size: 16px;
+              font-weight: bold;
+              margin-right: 12px;
+              &:hover {
+                  background-color: var(--hover-color);
+              }
+              &:active {
+                  background-color: var(--green-color);
+              }
+          }
+      }
+      .courseinputcontainer {
+          width: 864px;
+          display: flex;
+          flex-direction: row;
+          .courseimagebox {
+              width: 328.61px;
+              height: 328.61px;
+              border: 2px solid black;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              overflow: hidden;
+          }
+          
+      }
+      .buttoncontainer {
+          width: 800px;
+          display: flex;
+          justify-content: flex-end;
+          .registerbutton {
+            width:35px;
+            height:35px;
+              background-color: var(--back-color);
+              border: 2px solid black;
+              border-radius: 50%;
+              &:hover {
+                  background-color: var(--hover-color);
+              }
+              &:active {
+                  background-color: var(--green-color);
+              }
+          }
+      }
+  }
+}
