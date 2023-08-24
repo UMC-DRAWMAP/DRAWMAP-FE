@@ -45,8 +45,6 @@ const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
 	const setPage = (e) => {
 		setCurrentpage(e);
 	};
-	console.log(currentPosts);
-
 
     useEffect(() => {
         if (level === 1) {
