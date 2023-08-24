@@ -6,11 +6,16 @@ import heartIcon from '../assets/images/heart.svg';
 import { useState, useEffect } from 'react';
 import PreviewBox from '../components/PreviewBox';
 import uploadIcon from '../assets/images/save.svg';
+import DrawBox from '../components/DrawBox';
+import Footer from '../components/Footer';
+import Paging from '../components/Paging';
 
 // 더미 데이터
 const dummyPlaceList = ['서울특별시', '성북구', '동대문구'];
 const coursedata = '고려대학교 - 경동시장 - 마장축산물시장 - 명동대성당 - 동대문종합시장 - 이화동 벽화마을 - 보문동5가 - 고려대학교';
 const introductiondata = '귀여운 강아지를 그려보세요~';
+
+// setItems(한줄리뷰리스트) get 요청으로 받아오는 코드 추후 구현 필요
 
 const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
 
@@ -21,6 +26,25 @@ const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
     const [satisfaction, setSatisfication] = useState(3);
 
 
+    const [items, setItems] = useState([]); //리스트에 나타낼 아이템
+	const [count, setCount] = useState(0); //아이템 총 개수
+	const [currentpage, setCurrentpage] = useState(1); //현재페이지
+	const [postPerPage] = useState(8); //페이지당 아이템 개수
+
+	const [indexOfLastPost, setIndexOfLastPost] = useState(0);
+	const [indexOfFirstPost, setIndexOfFirstPost] = useState(0);
+	const [currentPosts, setCurrentPosts] = useState(0);
+
+	useEffect(() => {
+		setCount(items.length);
+		setIndexOfLastPost(currentpage * postPerPage);
+		setIndexOfFirstPost(indexOfLastPost - postPerPage);
+		setCurrentPosts(items.slice(indexOfFirstPost, indexOfLastPost));
+	}, [currentpage, indexOfFirstPost, indexOfLastPost, items, postPerPage]);
+
+	const setPage = (e) => {
+		setCurrentpage(e);
+	};
 
     useEffect(() => {
         if (level === 1) {
@@ -155,6 +179,19 @@ const CourseReview = ({ img, userNum, userName, userProfile, level}) => {
                 </div>
             </div>
             <p className='reviewtitle'>한줄 리뷰</p>
+            <div className='reviewboxcontainer'>
+                {currentPosts && items.length > 0 ? (
+                    currentPosts.map((review) => (
+                        <DrawBox userName={review.userName} satisfaction={review.satisfaction} review={review.reviewtext}/>
+                    ))
+                )
+                : <div></div>
+                }
+            </div>
+            <div className='paginationcontainer'>
+                <Paging page={currentpage} count={count} setPage={setPage} itemsCountPerPage={8}/>
+            </div>
+            <Footer />
         </div>
     )
 };

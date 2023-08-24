@@ -178,6 +178,7 @@
                 }
             }
             .certifytextarea {
+                width: 100%;
                 margin-top: 15px;
                 background-color: var(--back-color);
                 resize: none;
@@ -203,5 +204,15 @@
         font-weight: bold;
         margin-top: 60.14px;
         margin-bottom: 9px;
+    }
+    .reviewboxcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+    .paginationcontainer {
+        margin-bottom: 100px;
     }
 }
