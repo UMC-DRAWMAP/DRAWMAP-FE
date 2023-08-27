@@ -9,6 +9,7 @@ import SmallMap from './assets/images/heart.svg';
 import ArchiveBox from './components/ArchiveBox';
 import ButtonSelect from './components/ButtonSelect';
 import Profile from './pages/Profile';
+import ProfileModify from './pages/ProfileModify';
 
 function App() {
 	return (
@@ -34,7 +35,8 @@ function App() {
 				content={'안녕하세요'}
 			/> */}
 			{/* <ButtonSelect title={'지역'} /> */}
-			<Profile />
+			{/* <Profile /> */}
+			<ProfileModify />
 		</div>
 	);
 }

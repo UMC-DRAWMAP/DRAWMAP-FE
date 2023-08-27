@@ -3,9 +3,9 @@ import Footer from '../components/Footer';
 import SmallDrawBox from '../components/SmallDrawBox';
 import Button from '../components/Button';
 import PreviewBox from '../components/PreviewBox';
-import Pencil from '../assets/images/pencil.svg';
 import DropBtn from '../assets/images/dropdown-btn.svg';
-import { ReactComponent as DefaultImg } from '../assets/images/char-pencil.svg';
+import PlusBtn from '../assets/images/plus.svg';
+import CheckBtn from '../assets/images/check.svg';
 import { useState } from 'react';
 
 import './Profile.scss';
@@ -13,7 +13,6 @@ import './Profile.scss';
 const dataList = {
 	name: '드로맵',
 	id: 'dsfasf',
-	img: '',
 	birth: '2000.01.02',
 	location: ['서울', '경기'],
 	text: '안녕하세요~~',
@@ -21,38 +20,51 @@ const dataList = {
 
 export default function Profile() {
 	const [isActive, setIsActive] = useState(false);
+	const [name, setName] = useState(dataList.name);
+	const [date, setDate] = useState(
+		`${dataList.birth.substring(0, 4)}-${dataList.birth.substring(5, 7)}-${dataList.birth.substring(8, 10)}`
+	);
 	return (
 		<div className="profile">
 			<Header />
 			<div className="pf-my-page">
 				<div className="pf-mp-title">마이페이지</div>
-				{/* 마이페이지 */}
+				{/* 마이페이지 수정하기 */}
 				<div className="pf-mp-group">
-					<div className="pf-mp-left">
-						<DefaultImg
-							className="mp-img"
-							style={{ display: dataList.img ? 'none' : 'block', width: '125.878px', height: '136.368px' }}
-						/>
-						<img
-							className="mp-img"
-							src={dataList.img}
-							alt="프로필 이미지"
-							style={{ display: dataList.img ? 'block' : 'none' }}
-						/>
-					</div>
+					<PreviewBox className="pf-mp-left" />
 					<div className="pf-mp-right">
-						<div className="mp-name">{dataList.name}</div>
+						<input
+							type="text"
+							className="mp-name"
+							value={name}
+							style={{ padding: '0px' }}
+							onChange={(e) => {
+								setName(e.target.value);
+							}}
+						/>
 						<div className="mp-info">
 							<div className="mp-id">{dataList.id}</div>
-							<div className="mp-birth">{dataList.birth}</div>
-							<Button className="mp-modify-btn" type={'default'} img={Pencil} />
+							<input
+								className="mp-birth"
+								type="date"
+								name=""
+								id=""
+								onChange={(e) => {
+									setDate(e.target.value);
+								}}
+								value={date}
+							/>
 						</div>
 						<div className="mp-location">
 							{dataList.location.map((it) => {
 								return <div className="location-box">{it}</div>;
 							})}
+							<Button type={'default'} img={PlusBtn} />
 						</div>
-						<div className="mp-text">{dataList.text}</div>
+						<textarea className="mp-text modify">{dataList.text}</textarea>
+						<div className="mp-check-btn">
+							<Button type={'default'} img={CheckBtn} />
+						</div>
 					</div>
 				</div>
 			</div>

@@ -13,6 +13,16 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
+			.PreviewBox {
+				width: 188.559px;
+				height: 188.559px;
+				border: 1.5px solid var(--black-color);
+				border-radius: 175px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 45.44px;
+			}
 			.pf-mp-left {
 				width: 188.559px;
 				height: 188.559px;
@@ -35,6 +45,7 @@
 					font-size: 12px;
 					font-weight: 800;
 					margin-bottom: 4.34px;
+					background-color: var(--back-color);
 				}
 				.mp-info {
 					margin-bottom: 6.39px;
@@ -48,8 +59,10 @@
 					}
 					.mp-birth {
 						font-size: 10px;
+						font-family: 'Pretendard';
 						font-weight: var(--regular-font);
 						margin-right: 15px;
+						background-color: var(--back-color);
 					}
 					.btn.default {
 						width: 18.053px;
@@ -77,12 +90,34 @@
 						background: var(--back-color);
 						margin-right: 5.35px;
 					}
+					.btn.default {
+						img {
+							width: 110%;
+						}
+					}
 				}
 				.mp-text {
 					width: 248px;
 					height: 74px;
 					font-size: 10px;
 					font-weight: var(--regular-font);
+					background: var(--back-color);
+					resize: none;
+					&.modify {
+						border-radius: 13.214px;
+						border: 1.5px solid var(--black-color);
+						padding: 18px 14px;
+					}
+				}
+				.mp-check-btn {
+					margin-top: 7px;
+					display: flex;
+					justify-content: flex-end;
+					.btn.default {
+						img {
+							width: 110%;
+						}
+					}
 				}
 			}
 		}
