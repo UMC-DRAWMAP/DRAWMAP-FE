@@ -1,0 +1,126 @@
+.profile {
+	margin: 0 10px;
+	.pf-my-page {
+		margin-top: 53.95px;
+		margin-bottom: 80.44px;
+		.pf-mp-title {
+			font-size: 12px;
+			font-weight: var(--bold-font);
+			margin-bottom: 59.48px;
+		}
+		.pf-mp-group {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			.pf-mp-left {
+				width: 188.559px;
+				height: 188.559px;
+				border: 1.5px solid var(--black-color);
+				border-radius: 175px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 45.44px;
+				.mp-img {
+					width: 185px;
+					height: 185px;
+					border-radius: 175px;
+				}
+			}
+			.pf-mp-right {
+				display: flex;
+				flex-direction: column;
+				.mp-name {
+					font-size: 12px;
+					font-weight: 800;
+					margin-bottom: 4.34px;
+				}
+				.mp-info {
+					margin-bottom: 6.39px;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					.mp-id {
+						font-size: 12px;
+						font-weight: 800;
+						margin-right: 9px;
+					}
+					.mp-birth {
+						font-size: 10px;
+						font-weight: var(--regular-font);
+						margin-right: 15px;
+					}
+					.btn.default {
+						width: 18.053px;
+						height: 18.053px;
+						img {
+							width: 170%;
+						}
+					}
+				}
+				.mp-location {
+					margin-bottom: 18.39px;
+					display: flex;
+					flex-direction: row;
+					.location-box {
+						font-size: 7.276px;
+						font-weight: 700;
+						display: flex;
+						width: max-content;
+						height: 23px;
+						padding: 4.865px 14.108px;
+						justify-content: center;
+						align-items: center;
+						border-radius: 48.648px;
+						border: 1.5px solid var(--black-color);
+						background: var(--back-color);
+						margin-right: 5.35px;
+					}
+				}
+				.mp-text {
+					width: 248px;
+					height: 74px;
+					font-size: 10px;
+					font-weight: var(--regular-font);
+				}
+			}
+		}
+	}
+	.pf-course {
+		.pf-course-list {
+			margin: 0 auto;
+			.course-title {
+				font-size: 12px;
+				font-weight: var(--bold-font);
+				margin-bottom: 7px;
+			}
+			.course-list {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				.sdb-body {
+					margin-right: 14.79px;
+					margin-bottom: 14.09px;
+				}
+			}
+			.course-btn {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-end;
+				.course-drop-text {
+					font-size: 10px;
+					font-weight: var(--semibold-font);
+					// text-align: right;
+					margin-right: 4.93px;
+				}
+				.course-drop-btn {
+					transition: transform 0.2s linear;
+					width: 18.639px;
+					height: 19px;
+				}
+			}
+		}
+	}
+}
