@@ -38,7 +38,7 @@ const dataList = [
 	},
 ];
 
-export default function ButtonSelect({ title }) {
+function ButtonSelect({ title }) {
 	const [isActive, setIsActive] = useState(false);
 	const [selectValue, setSelectValue] = useState('');
 
@@ -77,3 +77,4 @@ export default function ButtonSelect({ title }) {
 		</div>
 	);
 }
+export default ButtonSelect;
