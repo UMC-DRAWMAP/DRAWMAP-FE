@@ -6,8 +6,10 @@ import ChallengeRowBox from './components/ChallengeRowBox';
 import SmallDrawBox from './components/SmallDrawBox';
 import MapImg from './assets/images/alram.svg';
 import SmallMap from './assets/images/heart.svg';
+import CourseList from './pages/CourseList';
 import ArchiveBox from './components/ArchiveBox';
 import ButtonSelect from './components/ButtonSelect';
+import CourseList from './pages/CourseList';
 
 function App() {
 	return (
@@ -32,7 +34,8 @@ function App() {
 				rating={'상'}
 				content={'안녕하세요'}
 			/> */}
-			<ButtonSelect title={'지역'} />
+			{/* <ButtonSelect title={'지역'} /> */}
+			<CourseList />
 		</div>
 	);
 }
