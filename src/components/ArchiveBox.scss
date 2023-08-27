@@ -9,17 +9,17 @@
 	.ab-img {
 		position: relative;
 		width: 169.933px;
-		height: 169px;
+		height: 166px;
 		border-bottom-left-radius: 16px;
 		background: linear-gradient(0, #868686 1%, rgba(217, 217, 217, 0) 20%);
 		img {
 			border-top-left-radius: 17.206px;
-			border-bottom-left-radius: 17.206px;
+			border-bottom-left-radius: 16.206px;
 		}
 		.ab-map-img {
 			border-right: 1.721px solid var(--black-color);
 			width: 169.933px;
-			height: 168.603px;
+			height: 166px;
 		}
 		.ab-district {
 			position: absolute;
@@ -69,7 +69,7 @@
 			margin-bottom: 14.54px;
 		}
 		.ab-content {
-			height: 59px;
+			height: 50px;
 		}
 		.ab-btn-group {
 			display: flex;

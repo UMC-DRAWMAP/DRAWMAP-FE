@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Button from '../components/Button';
 import CourseListView from '../components/CourseListView';
 import PencilImg from '../assets/images/pencil.svg';
+import ButtonSelect from '../components/ButtonSelect';
 
 export default function CourseList() {
 	return (
@@ -13,7 +14,7 @@ export default function CourseList() {
 			<div className="cl-btn-group">
 				<Button type={'text-btn'} content={'인기순'} />
 				<Button type={'text-btn'} content={'최신순'} />
-				<Button type={'text-btn'} content={'지역별'} />
+				<ButtonSelect title={'지역별'} />
 				<Button img={PencilImg} type={'default'} />
 			</div>
 			<CourseListView />

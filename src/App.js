@@ -9,7 +9,6 @@ import SmallMap from './assets/images/heart.svg';
 import CourseList from './pages/CourseList';
 import ArchiveBox from './components/ArchiveBox';
 import ButtonSelect from './components/ButtonSelect';
-import CourseList from './pages/CourseList';
 
 function App() {
 	return (
