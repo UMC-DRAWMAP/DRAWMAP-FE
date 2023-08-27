@@ -1,4 +1,5 @@
 .course-list {
+	margin: 0 30px;
 	.Header {
 		margin-bottom: 53.95px;
 	}
@@ -23,8 +24,9 @@
 			}
 		}
 	}
-	.archive-box {
-		margin-right: 70px;
-		margin-bottom: 15px;
+	.lv-body {
+		.lv-box-group {
+			gap: 20px;
+		}
 	}
 }
