@@ -171,10 +171,10 @@ const handleClick14 = () => {
       <div className ='inputcontainer'>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: '10px',marginLeft : '540px'}}>
 
-                    <div className='courseinputcontainer'>
-                        <div className='courseimagebox'>
+                    <div className='userinputcontainer'>
+                        <div className='userimagebox'>
                             <label htmlFor="previewImg">
-                                <img src={imgFile ? imgFile : cameraicon} alt="" className='courseimage'/>
+                                <img src={imgFile ? imgFile : cameraicon} alt="" className='userimage'/>
                             </label>
                             <input type="file" accept="image/*" id="previewImg" onChange={handleImageUpload} ref={imgRef} style={{display: 'none'}}/>
                         </div>
@@ -182,11 +182,11 @@ const handleClick14 = () => {
         </div>
         <img src={charpencil} alt="" style={{width:'120px', marginTop: '-20px', marginLeft: '-700px'}}/>
         
-        <div className='titleinputcontainer'>
+        <div className='detailinputcontainer'>
                     <p className='inputitem'>유저닉네임</p>
-                    <input type="text" className='titleinput'/>
+                    <input type="text" className='detailinput'/>
                     <p className='inputitem' style ={{marginTop : '30px'}}>생년월일</p>
-                    <input type="text" className='titleinput'/>
+                    <input type="text" className='detailinput'/>
                 </div>
                 <div className='regioninputcontainer' style = {{marginLeft:'20px',marginTop: '30px'}}>
                         <p className='inputitem'>활동 지역</p>
@@ -212,9 +212,9 @@ const handleClick14 = () => {
                 
 
                     <img src={eraser} alt="" style={{width:'120px', marginTop: '-160px', marginLeft: '700px'}}/>
-                    <div className='titleinputcontainer'style={{ marginTop: '100px'}}>
+                    <div className='detailinputcontainer'style={{ marginTop: '100px'}}>
                     <p className='inputitem'>자전거 기종</p>
-                    <input type="text" className='titleinput'/> 
+                    <input type="text" className='detailinput'/> 
                     </div>
                     <div className='buttoncontainer'>
                     <button className='registerbutton'style={{marginTop: '100px', marginRight: '160px'}}><img src={check} alt=""></img></button>
