@@ -38,9 +38,17 @@ const dataList = [
 	},
 ];
 
-function ButtonSelect({ title }) {
+function ButtonSelect({ title, getTextValue }) {
 	const [isActive, setIsActive] = useState(false);
 	const [selectValue, setSelectValue] = useState('');
+
+	// const sendTextValue = () => {
+	// 	getTextValue(selectValue);
+	// };
+
+	function sendTextValue() {
+		getTextValue(selectValue);
+	}
 
 	return (
 		<div
@@ -65,7 +73,10 @@ function ButtonSelect({ title }) {
 						return (
 							<li
 								onClick={() => {
+									getTextValue(selectValue);
 									setSelectValue(`${it.item}`);
+									// setTimeout(getTextValue(selectValue), 5000);
+									// getTextValue(selectValue);
 								}}
 							>
 								{it.item}
