@@ -23,6 +23,7 @@ export default function CourseList() {
 				<Button type={'text-btn'} content={'인기순'} />
 				<Button type={'text-btn'} content={'최신순'} />
 				<ButtonSelect title={'지역별'} getTextValue={getTextValue} textValue={textValue} />
+				{getTextValue}
 				<div className="cl-location">
 					{textValue}
 					<img src={XBtn} alt="삭제 버튼" className="cl-x-btn" />
