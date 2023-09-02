@@ -1,6 +1,6 @@
 import './ButtonSelect.scss';
 import DropBtn from '../assets/images/dropdown-btn.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const dataList = [
 	{
@@ -46,9 +46,9 @@ function ButtonSelect({ title, getTextValue }) {
 	// 	getTextValue(selectValue);
 	// };
 
-	function sendTextValue() {
+	useEffect(() => {
 		getTextValue(selectValue);
-	}
+	}, [selectValue]);
 
 	return (
 		<div
@@ -73,7 +73,7 @@ function ButtonSelect({ title, getTextValue }) {
 						return (
 							<li
 								onClick={() => {
-									getTextValue(selectValue);
+									// getTextValue(selectValue);
 									setSelectValue(`${it.item}`);
 									// setTimeout(getTextValue(selectValue), 5000);
 									// getTextValue(selectValue);

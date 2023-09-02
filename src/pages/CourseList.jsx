@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Button from '../components/Button';
 import CourseListView from '../components/CourseListView';
 import PencilImg from '../assets/images/pencil.svg';
+import XBtn from '../assets/images/x-btn.svg';
 import ButtonSelect from '../components/ButtonSelect';
 import { useState } from 'react';
 
@@ -22,7 +23,10 @@ export default function CourseList() {
 				<Button type={'text-btn'} content={'인기순'} />
 				<Button type={'text-btn'} content={'최신순'} />
 				<ButtonSelect title={'지역별'} getTextValue={getTextValue} textValue={textValue} />
-				<div className="loaction">{textValue}</div>
+				<div className="cl-location">
+					{textValue}
+					<img src={XBtn} alt="삭제 버튼" className="cl-x-btn" />
+				</div>
 				<Button img={PencilImg} type={'default'} />
 			</div>
 			<CourseListView />
