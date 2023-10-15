@@ -1,40 +1,25 @@
 import { Reset } from 'styled-reset';
 import './App.scss';
-import Button from './components/Button';
-import Img from './assets/images/more.svg';
-import ChallengeRowBox from './components/ChallengeRowBox';
-import SmallDrawBox from './components/SmallDrawBox';
-import MapImg from './assets/images/alram.svg';
-import SmallMap from './assets/images/heart.svg';
+import MonthCourse from './pages/MonthCourse';
 import CourseList from './pages/CourseList';
-import ArchiveBox from './components/ArchiveBox';
-import ButtonSelect from './components/ButtonSelect';
+import CourseInput from './pages/CourseInput';
+import CourseReview from './pages/CourseReview';
+import UserInput from './pages/UserInput';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className="App">
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<MonthCourse />} />
+					<Route path="/courselist" element={<CourseList />} />
+					<Route path="/courseinput" element={<CourseInput />} />
+					<Route path="/coursereview" element={<CourseReview />} />
+					<Route path="/userinput" element={<UserInput />} />
+				</Routes>
+			</BrowserRouter>
 			<Reset />
-			{/* <Button content={'더보기'} type={'text-more'} />
-			<ChallengeRowBox
-				img={MapImg}
-				district={'경기'}
-				title={'개구리'}
-				date={'2022.06.02'}
-				rating={'상'}
-				content={'안녕하세요'}
-			/>
-			<SmallDrawBox img={SmallMap} userName={'닉네임'} />
-			<ArchiveBox
-				img={MapImg}
-				district={'경기'}
-				userName={'닉네임'}
-				title={'개구리'}
-				date={'2022.06.02'}
-				rating={'상'}
-				content={'안녕하세요'}
-			/> */}
-			{/* <ButtonSelect title={'지역'} /> */}
-			<CourseList />
 		</div>
 	);
 }
