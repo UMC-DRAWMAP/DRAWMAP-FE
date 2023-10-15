@@ -73,12 +73,33 @@ export default function Profile() {
 					<div className="course-title">참여한 이달의 도전코스</div>
 					{/* 아이템의 갯수가 6개를 초과하면 펼치기/접기 버튼 활성화 */}
 					<div className="course-list">
-						<SmallDrawBox />
-						<SmallDrawBox />
-						<SmallDrawBox />
-						<SmallDrawBox />
-						<SmallDrawBox />
-						<SmallDrawBox />
+						<SmallDrawBox
+							img={
+								'https://upload.wikimedia.org/wikipedia/commons/4/40/%EC%97%AC%EC%9D%98%EB%8F%84_%EC%A7%80%EB%8F%84.png'
+							}
+							userName={'드로맵1'}
+						/>
+						<SmallDrawBox
+							img={'https://map.daumcdn.net/map_k3f_prod/bakery/image_map_png/PNG01/v22_galhg/7/125/54.png'}
+							userName={'드로맵2'}
+						/>
+						<SmallDrawBox
+							img={'https://map.daumcdn.net/map_k3f_prod/bakery/image_map_png/PNG01/v22_galhg/7/124/54.png'}
+							userName={'드로맵3'}
+						/>
+						<SmallDrawBox
+							img={'https://topopentile2.tmap.co.kr/tms/1.0.0/hd_tile/17/111768/80318.png'}
+							userName={'드로맵4'}
+						/>
+						<SmallDrawBox
+							img={'https://www.ydp.go.kr/site/www/images/contents/cts2884_det_img.jpg'}
+							userName={'드로맵5'}
+						/>
+						<SmallDrawBox
+							img={'https://map.daumcdn.net/map_k3f_prod/bakery/image_map_png/PNG01/v22_galhg/4/765/495.png'}
+							userName={'드로맵6'}
+						/>
+
 						{/* <SmallDrawBox /> */}
 					</div>
 					<div
@@ -96,13 +117,42 @@ export default function Profile() {
 						/>
 					</div>
 				</div>
-				<div className="pf-course-list">
+				{/* <div className="pf-course-list">
 					<div className="course-title">참여한 이달의 도전코스</div>
 					<div className="course-list"></div>
-				</div>
+				</div> */}
 				<div className="pf-course-list">
 					<div className="course-title">찜한코스</div>
-					<div className="course-list"></div>
+					<div className="course-list">
+						<SmallDrawBox
+							img={
+								'https://upload.wikimedia.org/wikipedia/commons/4/40/%EC%97%AC%EC%9D%98%EB%8F%84_%EC%A7%80%EB%8F%84.png'
+							}
+							userName={'드로맵1'}
+						/>
+						<SmallDrawBox
+							img={'https://map.daumcdn.net/map_k3f_prod/bakery/image_map_png/PNG01/v22_galhg/7/125/54.png'}
+							userName={'드로맵2'}
+						/>
+						<SmallDrawBox
+							img={'https://map.daumcdn.net/map_k3f_prod/bakery/image_map_png/PNG01/v22_galhg/7/124/54.png'}
+							userName={'드로맵3'}
+						/>
+						<SmallDrawBox
+							img={'https://topopentile2.tmap.co.kr/tms/1.0.0/hd_tile/17/111768/80318.png'}
+							userName={'드로맵4'}
+						/>
+						<SmallDrawBox
+							img={'https://www.ydp.go.kr/site/www/images/contents/cts2884_det_img.jpg'}
+							userName={'드로맵5'}
+						/>
+						<SmallDrawBox
+							img={'https://map.daumcdn.net/map_k3f_prod/bakery/image_map_png/PNG01/v22_galhg/4/765/495.png'}
+							userName={'드로맵6'}
+						/>
+
+						{/* <SmallDrawBox /> */}
+					</div>
 				</div>
 			</div>
 			<Footer />

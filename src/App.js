@@ -5,6 +5,8 @@ import CourseList from './pages/CourseList';
 import CourseInput from './pages/CourseInput';
 import CourseReview from './pages/CourseReview';
 import UserInput from './pages/UserInput';
+import Profile from './pages/Profile';
+import ProfileModify from './pages/ProfileModify';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
 					<Route path="/courseinput" element={<CourseInput />} />
 					<Route path="/coursereview" element={<CourseReview />} />
 					<Route path="/userinput" element={<UserInput />} />
+					<Route path="/profile" element={<Profile />} />
+					<Route path="/profile/modify" element={<ProfileModify />} />
 				</Routes>
 			</BrowserRouter>
 			<Reset />

@@ -213,6 +213,8 @@ const MonthCourse = () => {
 		setTextValue(text);
 	};
 
+	const token = sessionStorage.getItem('accessToken');
+
 	return (
 		<div className="MonthCourse">
 			<Header />

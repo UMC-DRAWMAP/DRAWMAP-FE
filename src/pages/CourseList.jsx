@@ -7,6 +7,7 @@ import PencilImg from '../assets/images/pencil.svg';
 import XBtn from '../assets/images/x-btn.svg';
 import ButtonSelect from '../components/ButtonSelect';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function CourseList() {
 	const [textValue, setTextValue] = useState('');
@@ -14,7 +15,7 @@ export default function CourseList() {
 	const getTextValue = (text) => {
 		setTextValue(text);
 	};
-
+	const navigate = useNavigate();
 	return (
 		<div className="course-list">
 			<Header />
@@ -27,7 +28,13 @@ export default function CourseList() {
 					{textValue}
 					<img src={XBtn} alt="삭제 버튼" className="cl-x-btn" />
 				</div>
-				<Button img={PencilImg} type={'default'} />
+				<Button
+					img={PencilImg}
+					type={'default'}
+					onClick={() => {
+						navigate('/courseinput');
+					}}
+				/>
 			</div>
 			<CourseListView />
 			<Footer />
