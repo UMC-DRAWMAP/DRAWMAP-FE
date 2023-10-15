@@ -8,6 +8,10 @@ import cameraicon from '../assets/images/camera.svg';
 import check from '../assets/images/check.svg';
 import welcome from '../assets/images/welcome.svg';
 import character from '../assets/images/character.png';
+
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 const UserInput = () => {
 	const [isClicked1, setIsClicked1] = useState('--back-color');
 	const [isClicked2, setIsClicked2] = useState('--back-color');
@@ -162,6 +166,36 @@ const UserInput = () => {
 			setIsClicked14('--back-color');
 		} else {
 			setIsClicked14('--green-color');
+		}
+	};
+
+	const navigate = useNavigate();
+	const [accessToken, setAccessToken] = useState('');
+
+	const handleSignUp = () => {
+		const code = new URL(window.location.href).searchParams.get('code');
+		setAccessToken(code);
+
+		sessionStorage.setItem('accessToken', accessToken);
+
+		if (accessToken !== null && accessToken !== '') {
+			axios({
+				headers: {
+					Authorization: `Bearer ${accessToken}`,
+					'Content-Type': 'multipart/form-data',
+				},
+				method: 'post',
+				url: 'http://54.80.0.204:9000/user/signup',
+				data: {
+					access_token: accessToken,
+				},
+			}).then((res) => {
+				if (res.data.code === 200) {
+					console.log(res);
+					sessionStorage.setItem('accessToken', res.data.result.accessToken);
+					navigate('/userinput');
+				}
+			});
 		}
 	};
 	return (
