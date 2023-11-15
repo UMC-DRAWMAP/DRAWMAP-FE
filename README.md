@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# DrawMap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./src/assets/images/logo-drawmap.svg" alt="드로맵 로고" width="350px">
 
-## Available Scripts
+자전거 주행으로 **그리는** 관광 컨텐츠 개발/공유 서비스
 
-In the project directory, you can run:
+🗓️ 개발기간: 2023.07 ~ 2023.09  
+🛠️ 기술 스택: JavaScript, React, SCSS  
+👩🏻‍💻👨🏻‍💻 FE 개발자: [소하(최소연)](https://github.com/soi-ha), [제이(이정우)](https://github.com/jungwoo3490), 제카(양다빈)
 
-### `npm start`
+## UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 소하(최소연) 담당 파트
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**코스개발페이지**
 
-### `npm test`
+<img width="510" alt="스크린샷 2023-11-15 17 05 17" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/78b3e088-a593-454d-9f0e-3fd74592fdd1">
+<img width="510" alt="스크린샷 2023-11-15 17 05 06" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/63f6d3f0-b3f9-457d-9d10-6754fb1be8be">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**마이페이지**
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="510" alt="스크린샷 2023-11-15 17 03 42" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/ff3d6a42-defe-42a5-be93-68b73b5b90b2">
+<img width="510" alt="스크린샷 2023-11-15 17 04 50" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/e40f6ae2-e0ba-466d-a8df-0bece3c90b08">
