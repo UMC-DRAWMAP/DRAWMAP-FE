@@ -14,10 +14,10 @@
 
 **코스개발페이지**
 
-<img width="510" alt="스크린샷 2023-11-15 17 05 17" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/78b3e088-a593-454d-9f0e-3fd74592fdd1">
-<img width="510" alt="스크린샷 2023-11-15 17 05 06" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/63f6d3f0-b3f9-457d-9d10-6754fb1be8be">
+<img width="510px" alt="코스개발 페이지1" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/78b3e088-a593-454d-9f0e-3fd74592fdd1">
+<img width="510px" alt="코스개발 페이지2" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/63f6d3f0-b3f9-457d-9d10-6754fb1be8be">
 
 **마이페이지**
 
-<img width="510" alt="스크린샷 2023-11-15 17 03 42" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/ff3d6a42-defe-42a5-be93-68b73b5b90b2">
-<img width="510" alt="스크린샷 2023-11-15 17 04 50" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/e40f6ae2-e0ba-466d-a8df-0bece3c90b08">
+<img width="510px" alt="마이페이지" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/ff3d6a42-defe-42a5-be93-68b73b5b90b2">
+<img width="510px" alt="마이페이지 수정" src="https://github.com/soi-ha/soi-ha.github.io/assets/77609591/e40f6ae2-e0ba-466d-a8df-0bece3c90b08">
